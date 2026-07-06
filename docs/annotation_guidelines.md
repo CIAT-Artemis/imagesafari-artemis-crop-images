@@ -18,8 +18,8 @@ Five representations are provided:
 
 ## Annotation tracks
 
-- **automated/** — higher-volume labels suitable for pre-training and
-  representation learning.
+- **standard/** — higher-volume labels from the scaled annotation pipeline,
+  suitable for pre-training and representation learning.
 - **benchmark/** — expert-reviewed labels for method comparison and
   reproducibility studies.
 
@@ -50,7 +50,7 @@ segmentation; inter-annotator agreement is reported in the data descriptor.
 
 ```text
 <crop>/annotations/
-├── automated/
+├── standard/
 │   ├── coco/
 │   └── masks/
 └── benchmark/

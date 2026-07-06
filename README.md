@@ -42,7 +42,7 @@ Versioned releases are documented in [`CHANGELOG.md`](CHANGELOG.md).
 
 The repository is organized by crop, with each crop directory containing an
 `images/` subtree organized by collection site and acquisition date, an
-`annotations/` subtree containing both automated and benchmark annotation
+`annotations/` subtree containing both standard and benchmark annotation
 tracks, and a `metadata/` subtree.
 
 ```text
@@ -50,7 +50,7 @@ Artemis/
 └── <crop>/
     ├── images/<collection-site>/<acquisition-date>/
     ├── annotations/
-    │   ├── automated/    # COCO JSON and PNG masks
+    │   ├── standard/     # COCO JSON and PNG masks
     │   └── benchmark/    # expert-reviewed subset (where applicable)
     └── metadata/         # CSV and Parquet tables
 
@@ -58,7 +58,7 @@ ImageSafari/
 └── <crop>/
     ├── images/<collection-site>/<acquisition-date>/
     ├── annotations/
-    │   ├── automated/
+    │   ├── standard/
     │   └── benchmark/    # banana, common-bean, potato, sorghum
     └── metadata/
 ```

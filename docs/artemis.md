@@ -71,7 +71,7 @@ Artemis/
 └── <crop>/
     ├── images/<collection-site>/<acquisition-date>/
     ├── annotations/
-    │   ├── automated/
+    │   ├── standard/
     │   └── benchmark/
     └── metadata/
 ```

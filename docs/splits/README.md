@@ -19,4 +19,4 @@ Each manifest lists `object_key`, `crop`, `site`, `country`, `date_captured`,
 ## Usage
 
 When reporting results, specify the dataset (Artemis or Image Safari), crop
-subset, annotation track (`automated` or `benchmark`), and split files used.
+subset, annotation track (`standard` or `benchmark`), and split files used.

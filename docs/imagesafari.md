@@ -140,7 +140,7 @@ or winter. Seasonal coverage varies substantially by crop.
 The repository is organized by crop. Each crop directory contains:
 
 - an `images/` subtree organized by collection site and acquisition date
-- an `annotations/` subtree containing both automated and benchmark annotation
+- an `annotations/` subtree containing both standard and benchmark annotation
   tracks
 - a `metadata/` subtree with acquisition and provenance records
 
@@ -154,7 +154,7 @@ ImageSafari/
     │       └── <acquisition-date>/
     │           └── <file>.<extension>
     ├── annotations/
-    │   ├── automated/
+    │   ├── standard/
     │   └── benchmark/
     └── metadata/
 ```
@@ -198,7 +198,8 @@ subtree for each crop.
 
 The `annotations/` subtree provides two tracks:
 
-- **automated/** — higher-volume labels suitable for pre-training
+- **standard/** — labels from the scaled annotation pipeline, suitable for
+  pre-training
 - **benchmark/** — expert-reviewed labels for method comparison
 
 The benchmark track is populated for four crops: banana, common bean, potato,

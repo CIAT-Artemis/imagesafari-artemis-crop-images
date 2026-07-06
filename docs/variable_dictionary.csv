@@ -13,7 +13,7 @@ capture_angle,string,Camera angle relative to the horizontal,imagesafari,no
 plot_id,string,Unique plot identifier linking imagery to field records,artemis,yes
 variety_id,string,Variety or genotype identifier,artemis,no
 treatment,string,Applied treatment or management factor,artemis,no
-annotation_track,string,"automated or benchmark",both,no
+annotation_track,string,"standard or benchmark",both,no
 annotation_type,string,"bounding box, masks, point, scribble, or polygon",both,no
 file_format,string,Image file extension; release images are JPEG,both,yes
 object_key,string,S3 or FAIRGrounds object key,both,yes

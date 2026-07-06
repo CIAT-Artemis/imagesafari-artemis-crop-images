@@ -7,7 +7,7 @@ documented in this file.
 
 ### Documentation
 
-- Align repository documentation with the July 2026 data descriptor.
+- Rename annotation track `automated` to `standard` for clarity.
 - Add metadata dictionary, annotation guidelines, validation report template,
   and split documentation.
 - Clarify FAIRGrounds as the primary release platform with AWS Open Data mirror
