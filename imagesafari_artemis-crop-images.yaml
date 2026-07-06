@@ -11,7 +11,7 @@ Documentation: >
   Dataset documentation, metadata schemas, predefined splits, and access
   instructions are available at
   https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/blob/main/README.md.
-  Component-specific documentation is provided in docs/artemis.md and
+  Dataset-specific documentation is provided in docs/artemis.md and
   docs/imagesafari.md.
 Contact: https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/issues
 ManagedBy: "[Alliance of Bioversity International and CIAT](https://alliancebioversityciat.org/)"

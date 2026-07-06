@@ -1,8 +1,8 @@
 # ImageSafari_Artemis Crop Image Collection
 
-This repository hosts the **ImageSafari_Artemis** dataset — a unified agricultural image collection comprising **7,469,220 field images** across two complementary components, **Artemis** and **Image Safari**, developed by the Alliance of Bioversity International and CIAT.
+This repository hosts the **ImageSafari_Artemis** dataset — a unified agricultural image collection comprising **7,469,220 field images** across two complementary datasets, **Artemis** and **Image Safari**, developed by the Alliance of Bioversity International and CIAT.
 
-| Component | Images | Crops | Countries | Focus |
+| Dataset | Images | Crops | Countries | Focus |
 |---|---:|---:|---:|---|
 | **Artemis** | 1,387,665 | 4 | 4 | Structured phenotyping with linked field metadata |
 | **Image Safari** | 6,081,555 | 18 | 9 | Diversity across crops, geographies, and imaging conditions |
@@ -49,7 +49,7 @@ Versioned releases are documented in [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Repository structure
 
-The dataset is organized by component and crop. Each crop directory contains an
+The collection is organized into the Artemis and Image Safari datasets, grouped by crop. Each crop directory contains an
 `images/` subtree organized by collection site and acquisition date, an
 `annotations/` subtree with **standard** and **benchmark** tracks, and a
 `metadata/` subtree.
@@ -81,10 +81,10 @@ format, with Parquet copies for analytical workflows.
 
 | File | Purpose |
 |---|---|
-| [`Artemis/`](Artemis/) | Artemis component (4 crops) |
-| [`ImageSafari/`](ImageSafari/) | Image Safari component (18 crops) |
-| [`docs/artemis.md`](docs/artemis.md) | Artemis component documentation |
-| [`docs/imagesafari.md`](docs/imagesafari.md) | Image Safari component documentation |
+| [`Artemis/`](Artemis/) | Artemis dataset (4 crops) |
+| [`ImageSafari/`](ImageSafari/) | Image Safari dataset (18 crops) |
+| [`docs/artemis.md`](docs/artemis.md) | Artemis dataset documentation |
+| [`docs/imagesafari.md`](docs/imagesafari.md) | Image Safari dataset documentation |
 | [`docs/variable_dictionary.csv`](docs/variable_dictionary.csv) | Metadata field definitions |
 | [`docs/annotation_guidelines.md`](docs/annotation_guidelines.md) | Annotation ontology and quality-control procedures |
 | [`docs/splits/`](docs/splits/) | Predefined train/validation/test splits |
@@ -102,8 +102,8 @@ ImageSafari_Artemis collection.
 
 ## Documentation
 
-- See [`docs/artemis.md`](docs/artemis.md) for the Artemis component.
-- See [`docs/imagesafari.md`](docs/imagesafari.md) for the Image Safari component.
+- See [`docs/artemis.md`](docs/artemis.md) for the Artemis dataset.
+- See [`docs/imagesafari.md`](docs/imagesafari.md) for the Image Safari dataset.
 - Consult [`docs/variable_dictionary.csv`](docs/variable_dictionary.csv) and
   [`docs/annotation_guidelines.md`](docs/annotation_guidelines.md) before use.
 

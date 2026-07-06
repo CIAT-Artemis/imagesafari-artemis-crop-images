@@ -8,7 +8,7 @@ in this file.
 ### Documentation
 
 - Remove FAIRGrounds references; AWS Open Data is the sole data hosting platform.
-- Treat ImageSafari_Artemis as one unified dataset with Artemis and Image Safari components.
+- Treat ImageSafari_Artemis as one unified dataset with Artemis and Image Safari datasets.
 - Rename tutorial notebook to `get-to-know-a-dataset-imagesafari_artemis.ipynb`.
 - Rename annotation track `automated` to `standard` for clarity.
 

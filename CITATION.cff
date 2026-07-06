@@ -10,7 +10,7 @@ repository-code: https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images
 url: https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images
 abstract: >
   A unified agricultural image dataset comprising 7,469,220 field photographs
-  across two complementary components. Artemis (1,387,665 images) is a
+  across two complementary datasets. Artemis (1,387,665 images) is a
   structured phenotyping collection across four crops and four countries. Image
   Safari (6,081,555 images) is a diversity-driven corpus across 18 crops and
   nine countries. A subset of 42,981 images includes organ-level annotations.
