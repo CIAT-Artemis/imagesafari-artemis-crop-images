@@ -1,9 +1,6 @@
 # ImageSafari_Artemis Crop Image Collection
 
-This repository hosts the **ImageSafari_Artemis** dataset — a unified
-agricultural image collection comprising **7,469,220 field photographs** across
-two complementary components developed by the Alliance of Bioversity
-International and CIAT.
+This repository hosts the **ImageSafari_Artemis** dataset — a unified agricultural image collection comprising **7,469,220 field images** across two complementary components, **Artemis** and **Image Safari**, developed by the Alliance of Bioversity International and CIAT.
 
 | Component | Images | Crops | Countries | Focus |
 |---|---:|---:|---:|---|
