@@ -1,15 +1,14 @@
-# ImageSafari_Artemis Crop Image Collection
+# Image Safari Agricultural Image Corpus
 
-The ImageSafari_Artemis Crop Image Collection is an open, curated set of field
-photographs representing 18 staple food and legume crops. Images were collected
-at research stations and farms across eight African countries through 15
-research centres under the ImageSafari_Artemis initiative.
+Image Safari is a diversity-driven agricultural image corpus assembled to
+capture variability across crops, geographies, and imaging conditions. Multiple
+imaging devices and field conditions are represented, with particular emphasis
+on smallholder farming systems common in the Global South that remain
+substantially underrepresented in existing public datasets.
 
-The published collection contains **6,081,555 cleaned images** selected from a
-working corpus of 7,352,184 images. The collection is intended for training and
-evaluating computer-vision models, crop identification, phenotyping research,
-agricultural monitoring, domain-generalization studies, and image-data curation
-research.
+The corpus is maintained by the
+[Alliance of Bioversity International and CIAT](https://alliancebioversityciat.org/)
+and is being prepared for publication through the Registry of Open Data on AWS.
 
 ## Dataset summary
 
@@ -17,39 +16,54 @@ research.
 |---|---:|
 | Published images | 6,081,555 |
 | Crops | 18 |
-| Countries represented in the source corpus | 8 |
+| Countries | 9 |
 | Contributing research centres | 15 |
 | Image formats | JPEG, PNG, WebP |
 | License | CC BY-SA 4.0 |
 
-## Crops and image counts
+The published collection contains **6,081,555 cleaned images** selected from a
+working corpus of 7,352,184 images. The collection is intended for training and
+evaluating computer-vision models, crop identification, agricultural
+monitoring, domain-generalization studies, and image-data curation research.
 
-| Crop | Images | Share |
-|---|---:|---:|
-| Potato | 1,689,917 | 27.8% |
-| Sorghum | 730,682 | 12.0% |
-| Pigeon pea | 698,011 | 11.5% |
-| Finger millet | 593,461 | 9.8% |
-| Cowpea | 519,759 | 8.5% |
-| Sweet potato | 462,894 | 7.6% |
-| Groundnut | 411,948 | 6.8% |
-| Banana | 334,732 | 5.5% |
-| Pearl millet | 211,390 | 3.5% |
-| Yam | 117,494 | 1.9% |
-| Lentil | 78,218 | 1.3% |
-| Chickpea | 73,856 | 1.2% |
-| Rice | 53,170 | 0.9% |
-| Wheat | 37,023 | 0.6% |
-| Maize | 23,348 | 0.4% |
-| Common bean | 22,295 | 0.4% |
-| Cassava | 12,120 | 0.2% |
-| Soybean | 11,237 | 0.2% |
-| **Total** | **6,081,555** | **100%** |
+## Crops
 
-## Geographic and institutional coverage
+| Crop | Scientific name |
+|---|---|
+| Banana | *Musa* spp. |
+| Cassava | *Manihot esculenta* |
+| Chickpea | *Cicer arietinum* |
+| Common bean | *Phaseolus vulgaris* |
+| Cowpea | *Vigna unguiculata* |
+| Finger millet | *Eleusine coracana* |
+| Groundnut | *Arachis hypogaea* |
+| Lentil | *Lens culinaris* |
+| Maize | *Zea mays* |
+| Pearl millet | *Cenchrus americanus* |
+| Pigeon pea | *Cajanus cajan* |
+| Potato | *Solanum tuberosum* |
+| Rice | *Oryza sativa* |
+| Sorghum | *Sorghum bicolor* |
+| Soybean | *Glycine max* |
+| Sweet potato | *Ipomoea batatas* |
+| Wheat | *Triticum aestivum* |
+| African yam | *Sphenostylis stenocarpa* |
 
-The source corpus covers Kenya, Tanzania, Uganda, Malawi, Nigeria, Senegal,
-Cote d'Ivoire, and Ghana. Contributions came through 15 research centres:
+## Countries
+
+The corpus spans nine countries:
+
+- Tanzania
+- Côte d'Ivoire
+- Madagascar
+- Nigeria
+- Senegal
+- Kenya
+- Ghana
+- Uganda
+- Malawi
+
+Contributions came through 15 research centres:
 
 - africa-rice-ci
 - africa-rice-ibadan
@@ -71,6 +85,30 @@ Kenya and Tanzania account for most images in the source corpus. This
 concentration should be considered when designing train, validation, and test
 splits or evaluating geographic generalization.
 
+## Crops and image counts
+
+| Crop | Images | Share |
+|---|---:|---:|
+| Potato | 1,689,917 | 27.8% |
+| Sorghum | 730,682 | 12.0% |
+| Pigeon pea | 698,011 | 11.5% |
+| Finger millet | 593,461 | 9.8% |
+| Cowpea | 519,759 | 8.5% |
+| Sweet potato | 462,894 | 7.6% |
+| Groundnut | 411,948 | 6.8% |
+| Banana | 334,732 | 5.5% |
+| Pearl millet | 211,390 | 3.5% |
+| African yam | 117,494 | 1.9% |
+| Lentil | 78,218 | 1.3% |
+| Chickpea | 73,856 | 1.2% |
+| Rice | 53,170 | 0.9% |
+| Wheat | 37,023 | 0.6% |
+| Maize | 23,348 | 0.4% |
+| Common bean | 22,295 | 0.4% |
+| Cassava | 12,120 | 0.2% |
+| Soybean | 11,237 | 0.2% |
+| **Total** | **6,081,555** | **100%** |
+
 ## Seasonal coverage
 
 Images are tagged with one of four growing-season labels: fall, spring, summer,
@@ -87,7 +125,7 @@ or winter. Seasonal coverage varies substantially by crop.
 | Groundnut | 261,342 | 33,525 | 6,034 | 111,047 | 411,948 |
 | Banana | 9,593 | 163,349 | 0 | 161,790 | 334,732 |
 | Pearl millet | 150,794 | 36,995 | 5,548 | 18,053 | 211,390 |
-| Yam | 0 | 82,069 | 0 | 35,425 | 117,494 |
+| African yam | 0 | 82,069 | 0 | 35,425 | 117,494 |
 | Lentil | 0 | 2,219 | 1,587 | 74,412 | 78,218 |
 | Chickpea | 0 | 4,211 | 941 | 68,704 | 73,856 |
 | Rice | 0 | 40,092 | 0 | 13,078 | 53,170 |
@@ -97,32 +135,36 @@ or winter. Seasonal coverage varies substantially by crop.
 | Cassava | 2,095 | 3,455 | 0 | 6,570 | 12,120 |
 | Soybean | 4,011 | 0 | 7,226 | 0 | 11,237 |
 
-## Included data
-
-The release contains cleaned still images in JPEG, PNG, and WebP formats.
-
-The following materials are not included:
-
-- Files rejected during curation because they were corrupted, exact
-  duplicates, empty, or identified as off-type or wrong-crop images
-
-
 ## Data organization
 
-Images are organized by crop at the top level of the S3 bucket. Object keys
-retain available acquisition metadata, including country, season, capture
-method, date, contributing centre, and file format.
+The repository is organized by crop. Each crop directory contains:
+
+- an `images/` subtree organized by collection site and acquisition date
+- an `annotations/` subtree containing both automated and benchmark annotation
+  tracks
+- a `metadata/` subtree with acquisition and provenance records
 
 Representative structure:
 
 ```text
-s3://<S3-BUCKET-NAME>/<crop>/.../<year>:<country>:<crop>:<season>/.../<capture-method>/<capture-date>/<file>.<extension>
+ImageSafari/
+└── <crop>/
+    ├── images/
+    │   └── <collection-site>/
+    │       └── <acquisition-date>/
+    │           └── <file>.<extension>
+    ├── annotations/
+    │   ├── automated/
+    │   └── benchmark/
+    └── metadata/
 ```
 
-Representative object:
+When accessed on S3, object keys retain available acquisition metadata,
+including country, season, capture method, date, contributing centre, and file
+format:
 
 ```text
-s3://<S3-BUCKET-NAME>/maize/.../2025:ken:maize:winter/.../phone_approach/2025-09-19/<file>.jpg
+s3://<S3-BUCKET-NAME>/ImageSafari/<crop>/images/<collection-site>/<acquisition-date>/<file>.<extension>
 ```
 
 The precise key structure can vary across contributing centres. Users should
@@ -130,7 +172,8 @@ read metadata defensively and treat unavailable values as `unknown`.
 
 ## Metadata
 
-Metadata are derived from the object key and source inventory.
+Metadata are derived from the object key, source inventory, and the `metadata/`
+subtree for each crop.
 
 | Field | Description |
 |---|---|
@@ -143,33 +186,46 @@ Metadata are derived from the object key and source inventory.
 | `centre` | Contributing research centre or station |
 | `file_format` | JPEG, PNG, or WebP, inferred from the extension |
 
+## Annotations
+
+The `annotations/` subtree provides two tracks:
+
+- **automated/** — model-generated labels produced at scale across the corpus
+- **benchmark/** — expert-reviewed annotations intended for evaluation and
+  method comparison
+
+## Included data
+
+The release contains cleaned still images in JPEG, PNG, and WebP formats.
+
+The following materials are not included:
+
+- Files rejected during curation because they were corrupted, exact
+  duplicates, empty, or identified as off-type or wrong-crop images
+
 ## Accessing the data
 
 The collection is publicly readable. The commands below use anonymous (unsigned)
 access, so no AWS account or credentials are required.
 
-List the top-level crop prefixes:
+List crop directories:
 
 ```bash
-aws s3 ls --no-sign-request --region <AWS-REGION> s3://<S3-BUCKET-NAME>/
+aws s3 ls --no-sign-request --region <AWS-REGION> s3://<S3-BUCKET-NAME>/ImageSafari/
 ```
 
-List the objects for one crop:
+List images for one crop:
 
 ```bash
-aws s3 ls --no-sign-request --region <AWS-REGION> --recursive s3://<S3-BUCKET-NAME>/potato/
+aws s3 ls --no-sign-request --region <AWS-REGION> --recursive \
+  s3://<S3-BUCKET-NAME>/ImageSafari/potato/images/
 ```
 
 Download one crop:
 
 ```bash
-aws s3 sync --no-sign-request --region <AWS-REGION> s3://<S3-BUCKET-NAME>/potato/ ./potato/
-```
-
-Copy one image:
-
-```bash
-aws s3 cp --no-sign-request --region <AWS-REGION> s3://<S3-BUCKET-NAME>/<OBJECT-KEY> .
+aws s3 sync --no-sign-request --region <AWS-REGION> \
+  s3://<S3-BUCKET-NAME>/ImageSafari/potato/ ./potato/
 ```
 
 Use anonymous access from Python:
@@ -190,7 +246,7 @@ s3 = boto3.client(
 
 response = s3.list_objects_v2(
     Bucket=bucket,
-    Prefix="potato/",
+    Prefix="ImageSafari/potato/images/",
     MaxKeys=10,
 )
 
@@ -229,7 +285,6 @@ may provide useful signal for robust model development.
 - Visually similar crops and growth stages can make fine-grained
   classification difficult.
 
-
 ## Suggested research tasks
 
 - Cross-centre and cross-country domain generalization
@@ -242,17 +297,10 @@ may provide useful signal for robust model development.
 The dataset is released under the
 [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
-Users may share and adapt the material for any purpose, including commercial
-use, provided that they give appropriate credit, link to the license, indicate
-whether changes were made, and distribute adapted material under the same
-license.
-
 ## Citation
 
-Use the following citation:
-
-> Alliance of Bioversity International and CIAT (2026). *ImageSafari_Artemis Crop
-> Image Collection*. Registry of Open Data on AWS.
+> Alliance of Bioversity International and CIAT (2026). *Image Safari
+> Agricultural Image Corpus*. Registry of Open Data on AWS.
 
 Also include the date on which the data were accessed and identify the release
 or S3 prefix used in the analysis.
@@ -260,10 +308,10 @@ or S3 prefix used in the analysis.
 ## Contact
 
 Questions, corrections, and dataset issues can be submitted through the
-[ImageSafari_Artemis repository issue tracker](https://github.com/CIAT-Artemis/imagesafari_artemis-crop-images/issues).
+[repository issue tracker](https://github.com/CIAT-Artemis/imagesafari_artemis-crop-images/issues).
 
 ## Acknowledgements
 
-ImageSafari_Artemis is led by the Alliance of Bioversity International and CIAT, part
+Image Safari is led by the Alliance of Bioversity International and CIAT, part
 of CGIAR, with images contributed by participating research centres. AWS
 hosting is supported through the AWS Open Data Sponsorship Program.

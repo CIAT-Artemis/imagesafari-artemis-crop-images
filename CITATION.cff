@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: If you use this dataset, please cite it using the metadata below.
-title: ImageSafari_Artemis Crop Image Collection
+message: If you use these datasets, please cite them using the metadata below.
+title: Artemis and Image Safari Crop Image Collections
 type: dataset
 authors:
   - name: Alliance of Bioversity International and CIAT
@@ -9,9 +9,11 @@ license: CC-BY-SA-4.0
 repository-code: https://github.com/CIAT-Artemis/imagesafari_artemis-crop-images
 url: https://github.com/CIAT-Artemis/imagesafari_artemis-crop-images
 abstract: >
-  A curated collection of 6,081,555 field photographs representing 18 staple
-  food and legume crops, collected through 15 research centres across eight
-  African countries.
+  Two complementary agricultural image datasets. Artemis is a structured
+  phenotyping collection pairing imagery with agronomic, genotypic, and
+  environmental metadata across four crops and three countries. Image Safari is
+  a diversity-driven corpus of 6,081,555 field photographs representing 18
+  crops across nine African countries.
 keywords:
   - agriculture
   - computer vision
