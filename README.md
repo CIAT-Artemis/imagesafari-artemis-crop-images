@@ -1,10 +1,18 @@
-# Artemis and Image Safari Crop Image Collections
+# ImageSafari_Artemis Crop Image Collection
 
-This repository hosts documentation, metadata schemas, predefined evaluation splits,
-and tutorials for two complementary agricultural image datasets developed by the
-Alliance of Bioversity International and CIAT.
+This repository hosts the **ImageSafari_Artemis** dataset — a unified
+agricultural image collection comprising **7,469,220 field photographs** across
+two complementary components developed by the Alliance of Bioversity
+International and CIAT.
 
-**Artemis** is a structured phenotyping dataset that pairs imagery with detailed
+| Component | Images | Crops | Countries | Focus |
+|---|---:|---:|---:|---|
+| **Artemis** | 1,387,665 | 4 | 4 | Structured phenotyping with linked field metadata |
+| **Image Safari** | 6,081,555 | 18 | 9 | Diversity across crops, geographies, and imaging conditions |
+
+## Artemis
+
+Artemis is a structured phenotyping dataset that pairs imagery with detailed
 agronomic, genotypic, and environmental metadata across four crop species —
 common bean (*Phaseolus vulgaris*), cowpea (*Vigna unguiculata*), soybean
 (*Glycine max*), and sorghum (*Sorghum bicolor*) — and four locations:
@@ -13,7 +21,9 @@ defined smartphone and push-cart protocols that link each image to metadata
 collected in the field, supporting fine-grained tasks such as trait estimation,
 growth stage recognition, and disease quantification.
 
-**Image Safari** is a diversity-driven agricultural image corpus assembled to
+## Image Safari
+
+Image Safari is a diversity-driven agricultural image corpus assembled to
 capture variability across 18 crops — banana (*Musa* spp.), cassava (*Manihot
 esculenta*), chickpea (*Cicer arietinum*), common bean (*P. vulgaris*), cowpea
 (*V. unguiculata*), finger millet (*Eleusine coracana*), groundnut (*Arachis
@@ -26,6 +36,9 @@ Côte d'Ivoire, Madagascar, Nigeria, Senegal, Kenya, Ghana, Uganda, and Malawi.
 Multiple imaging devices and field conditions are represented, with particular
 emphasis on smallholder farming systems common in the Global South that remain
 substantially underrepresented in existing public datasets.
+
+A subset of **42,981 annotated images** (12,216 Artemis; 30,765 Image Safari)
+includes organ-level labels in **standard** and **benchmark** annotation tracks.
 
 ## Public access
 
@@ -40,19 +53,19 @@ Versioned releases are documented in [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Repository structure
 
-The repository is organized by crop, with each crop directory containing an
+The dataset is organized by component and crop. Each crop directory contains an
 `images/` subtree organized by collection site and acquisition date, an
-`annotations/` subtree containing both standard and benchmark annotation
-tracks, and a `metadata/` subtree.
+`annotations/` subtree with **standard** and **benchmark** tracks, and a
+`metadata/` subtree.
 
 ```text
 Artemis/
 └── <crop>/
     ├── images/<collection-site>/<acquisition-date>/
     ├── annotations/
-    │   ├── standard/     # COCO JSON and PNG masks
-    │   └── benchmark/    # expert-reviewed subset (where applicable)
-    └── metadata/         # CSV and Parquet tables
+    │   ├── standard/
+    │   └── benchmark/
+    └── metadata/
 
 ImageSafari/
 └── <crop>/
@@ -72,45 +85,37 @@ format, with Parquet copies for analytical workflows.
 
 | File | Purpose |
 |---|---|
-| [`Artemis/`](Artemis/) | Structured phenotyping dataset (4 crops) |
-| [`ImageSafari/`](ImageSafari/) | Diversity-driven image corpus (18 crops) |
-| [`docs/artemis.md`](docs/artemis.md) | Artemis documentation and access instructions |
-| [`docs/imagesafari.md`](docs/imagesafari.md) | Image Safari documentation, crop counts, and curation summary |
+| [`Artemis/`](Artemis/) | Artemis component (4 crops) |
+| [`ImageSafari/`](ImageSafari/) | Image Safari component (18 crops) |
+| [`docs/artemis.md`](docs/artemis.md) | Artemis component documentation |
+| [`docs/imagesafari.md`](docs/imagesafari.md) | Image Safari component documentation |
 | [`docs/variable_dictionary.csv`](docs/variable_dictionary.csv) | Metadata field definitions |
 | [`docs/annotation_guidelines.md`](docs/annotation_guidelines.md) | Annotation ontology and quality-control procedures |
 | [`docs/splits/`](docs/splits/) | Predefined train/validation/test splits |
 | [`docs/metadata_validation_report.csv`](docs/metadata_validation_report.csv) | Metadata validation summary |
-| [`artemis-crop-images.yaml`](artemis-crop-images.yaml) | Artemis entry for the Registry of Open Data on AWS |
-| [`imagesafari-crop-images.yaml`](imagesafari-crop-images.yaml) | Image Safari entry for the Registry of Open Data on AWS |
-| [`get-to-know-a-dataset-imagesafari.ipynb`](get-to-know-a-dataset-imagesafari.ipynb) | Introductory AWS tutorial for Image Safari |
+| [`imagesafari_artemis-crop-images.yaml`](imagesafari_artemis-crop-images.yaml) | Registry of Open Data on AWS metadata entry |
+| [`get-to-know-a-dataset-imagesafari_artemis.ipynb`](get-to-know-a-dataset-imagesafari_artemis.ipynb) | Introductory AWS tutorial |
 | [`CITATION.cff`](CITATION.cff) | Machine-readable citation metadata |
 | [`CHANGELOG.md`](CHANGELOG.md) | Version history |
 | [`LICENSE.md`](LICENSE.md) | Dataset license notice |
 
-## Dataset summary
+## License
 
-| | Artemis | Image Safari | Combined |
-|---|---|---|---|
-| Crops | 4 | 18 | — |
-| Countries | 4 | 9 | 10 |
-| Images | 1,387,665 | 6,081,555 | 7,469,220 |
-| Annotated images | 12,216 | 30,765 | 42,981 |
-| Focus | Structured phenotyping with linked field metadata | Diversity across crops, geographies, and imaging conditions | Complementary pair |
-| License | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) for the full
+ImageSafari_Artemis collection.
 
 ## Documentation
 
-- See [`docs/artemis.md`](docs/artemis.md) for Artemis dataset description,
-  crop counts, metadata fields, and access examples.
-- See [`docs/imagesafari.md`](docs/imagesafari.md) for Image Safari dataset
-  description, crop counts, curation method, citation guidance, and limitations.
+- See [`docs/artemis.md`](docs/artemis.md) for the Artemis component.
+- See [`docs/imagesafari.md`](docs/imagesafari.md) for the Image Safari component.
 - Consult [`docs/variable_dictionary.csv`](docs/variable_dictionary.csv) and
   [`docs/annotation_guidelines.md`](docs/annotation_guidelines.md) before use.
 
 ## Citation
 
-Cite the data descriptor paper and identify the dataset version used. Also cite
-the FAIRGrounds accession or AWS release prefix and the date accessed.
+Cite the data descriptor paper and identify the ImageSafari_Artemis release
+version used. Also cite the FAIRGrounds accession or AWS release prefix and the
+date accessed.
 
 ## Contact
 

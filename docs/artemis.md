@@ -114,8 +114,8 @@ Released under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ## Citation
 
-> Alliance of Bioversity International and CIAT (2026). *Artemis Phenotyping
-> Dataset*. FAIRGrounds / Registry of Open Data on AWS.
+> Alliance of Bioversity International and CIAT (2026). *ImageSafari_Artemis
+> Crop Image Collection*. FAIRGrounds / Registry of Open Data on AWS.
 
 ## Contact
 

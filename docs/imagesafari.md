@@ -313,8 +313,8 @@ The dataset is released under the
 
 ## Citation
 
-> Alliance of Bioversity International and CIAT (2026). *Image Safari
-> Agricultural Image Corpus*. FAIRGrounds / Registry of Open Data on AWS.
+> Alliance of Bioversity International and CIAT (2026). *ImageSafari_Artemis
+> Crop Image Collection*. FAIRGrounds / Registry of Open Data on AWS.
 
 Also include the date on which the data were accessed and identify the release
 or S3 prefix used in the analysis.

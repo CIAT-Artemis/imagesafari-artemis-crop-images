@@ -1,9 +1,9 @@
 # Dataset License
 
-The Artemis and Image Safari crop image collections are licensed under the
+The ImageSafari_Artemis crop image collection is licensed under the
 [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
-You may share and adapt the datasets for any purpose, including commercial use,
+You may share and adapt the dataset for any purpose, including commercial use,
 provided that you:
 
 1. Give appropriate credit to the Alliance of Bioversity International and
