@@ -7,7 +7,7 @@ collection comprising **7,469,220 field images** across two complementary
 datasets, **Artemis** and **Image Safari**, developed by the
 [Alliance of Bioversity International and CIAT](https://alliancebioversityciat.org/).
 
-The collection spans **18 crop species** and **11 countries** across sub-Saharan
+The collection spans **18 crop species** and **10 countries** across sub-Saharan
 Africa, Latin America, and the United States, with emphasis on smallholder and
 structured phenotyping farming systems that remain underrepresented in public
 imaging corpora. Together, the datasets combine crop imagery, structured
@@ -19,7 +19,7 @@ agricultural monitoring, and cross-environment generalisation research.
 |---|---:|---:|---:|---|
 | **Artemis** | 1,387,665 | 4 | 4 | Structured phenotyping with linked field metadata |
 | **Image Safari** | 6,081,555 | 18 | 9 | Diversity across crops, geographies, and imaging conditions |
-| **Combined** | **7,469,220** | **18** | **11** | Unified ImageSafari_Artemis collection |
+| **Combined** | **7,469,220** | **18** | **10** | Unified ImageSafari_Artemis collection |
 
 ## Artemis
 
