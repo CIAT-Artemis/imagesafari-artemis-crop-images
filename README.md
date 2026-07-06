@@ -1,11 +1,25 @@
 # ImageSafari_Artemis Crop Image Collection
 
-This repository hosts the **ImageSafari_Artemis** dataset — a unified agricultural image collection comprising **7,469,220 field images** across two complementary datasets, **Artemis** and **Image Safari**, developed by the Alliance of Bioversity International and CIAT.
+This repository hosts the **ImageSafari_Artemis** dataset — also listed on the
+[Registry of Open Data on AWS](https://registry.opendata.aws/) as **Artemis and
+Image Safari Agricultural Imaging Dataset** — a unified agricultural image
+collection comprising **7,469,220 field images** across two complementary
+datasets, **Artemis** and **Image Safari**, developed by the
+[Alliance of Bioversity International and CIAT](https://alliancebioversityciat.org/).
+
+The collection spans **18 crop species** and **11 countries** across sub-Saharan
+Africa, Latin America, and the United States, with emphasis on smallholder and
+structured phenotyping farming systems that remain underrepresented in public
+imaging corpora. Together, the datasets combine crop imagery, structured
+metadata, and benchmark annotations to support agricultural foundation models,
+plant disease detection, growth stage recognition, crop identification,
+agricultural monitoring, and cross-environment generalisation research.
 
 | Dataset | Images | Crops | Countries | Focus |
 |---|---:|---:|---:|---|
 | **Artemis** | 1,387,665 | 4 | 4 | Structured phenotyping with linked field metadata |
 | **Image Safari** | 6,081,555 | 18 | 9 | Diversity across crops, geographies, and imaging conditions |
+| **Combined** | **7,469,220** | **18** | **11** | Unified ImageSafari_Artemis collection |
 
 ## Artemis
 
@@ -30,22 +44,30 @@ tuberosum*), rice (*Oryza sativa*), sorghum (*S. bicolor*), soybean (*Glycine
 max*), sweet potato (*Ipomoea batatas*), wheat (*Triticum aestivum*), and
 African yam (*Sphenostylis stenocarpa*) — across nine countries: Tanzania,
 Côte d'Ivoire, Madagascar, Nigeria, Senegal, Kenya, Ghana, Uganda, and Malawi.
+The published collection contains **6,081,555 cleaned images** selected from a
+working corpus of 7,352,184 images, contributed by **15 research centres**.
 Multiple imaging devices and field conditions are represented, with particular
 emphasis on smallholder farming systems common in the Global South that remain
 substantially underrepresented in existing public datasets.
 
 A subset of **42,981 annotated images** (12,216 Artemis; 30,765 Image Safari)
 includes organ-level labels in **standard** and **benchmark** annotation tracks.
+The **benchmark** track provides expert-reviewed annotations for banana, common
+bean, potato, and sorghum; the **standard** track covers the broader annotated
+subset produced through the scaled annotation pipeline.
 
 ## Public access
 
 | Asset | Location | Notes |
 |---|---|---|
-| Images, annotations, and metadata | [Registry of Open Data on AWS](https://registry.opendata.aws/) | Public S3 bucket; bucket name and Region to be added after provisioning |
+| Images, annotations, and metadata | [Registry of Open Data on AWS](https://registry.opendata.aws/artemis-image-safari) | Public S3 bucket (`us-east-1`); bucket name to be added after provisioning |
 | Documentation, schemas, splits, tutorials | This GitHub repository | [`docs/`](docs/) |
+| Introductory tutorial | [`get-to-know-a-dataset-imagesafari_artemis.ipynb`](get-to-know-a-dataset-imagesafari_artemis.ipynb) | Browse S3 anonymously; examples use Amazon S3, SageMaker, Glue, and Athena |
 | Issues and corrections | [GitHub Issues](https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/issues) | |
 
-Versioned releases are documented in [`CHANGELOG.md`](CHANGELOG.md).
+New imagery collected during annual field campaigns is reviewed, annotated, and
+added to the dataset approximately once per year. Annotation updates and quality
+corrections are versioned and documented in [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Repository structure
 
@@ -109,11 +131,22 @@ ImageSafari_Artemis collection.
 
 ## Citation
 
-Cite the data descriptor paper and identify the ImageSafari_Artemis release
-version used. Also cite the AWS Open Data registry entry, S3 bucket prefix, and the
-date accessed.
+Cite the data descriptor paper:
+
+> Mutuvi S., Guerena D., Zych M., Henday S., Agesa B., Ghandi A., et al.
+> *Artemis and Image Safari: Large imagery datasets targeting crop species and
+> smallholder farming systems in the global south.* [PAPER_DOI_URL]
+
+When accessing data through AWS, also cite the registry entry:
+
+> Artemis and Image Safari Agricultural Imaging Dataset was accessed on [DATE]
+> at [registry.opendata.aws/artemis-image-safari](https://registry.opendata.aws/artemis-image-safari).
+
+Identify the ImageSafari_Artemis release version used, the S3 bucket prefix, and
+the date accessed. Machine-readable citation metadata is in [`CITATION.cff`](CITATION.cff).
 
 ## Contact
 
 Questions, corrections, and dataset issues can be submitted through the
-[repository issue tracker](https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/issues).
+[repository issue tracker](https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/issues)
+or by email at [alliance-data-helpdesk@cgiar.org](mailto:alliance-data-helpdesk@cgiar.org).
