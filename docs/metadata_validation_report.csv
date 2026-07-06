@@ -1,0 +1,10 @@
+field,check,records_checked,errors_found,errors_corrected,notes
+crop,allowed_values,7469220,0,0,Validated against crop ontology
+site,non_null,7469220,124,124,Missing site codes imputed from centre logs
+date_captured,format_YYYY-MM-DD,7469220,38,38,Corrected from ODK timestamps
+latitude,range_and_non_null,7469220,412,389,Out-of-range coordinates flagged and corrected where possible
+longitude,range_and_non_null,7469220,412,389,Out-of-range coordinates flagged and corrected where possible
+growth_stage,allowed_values,7469220,56,56,Aligned to crop-specific staging scales
+plot_id,non_null_artemis,1387665,0,0,Artemis plots require plot identifiers
+annotation_track,allowed_values,42981,0,0,automated or benchmark only
+annotation_type,allowed_values,42981,0,0,Five supported annotation representations

@@ -1,16 +1,15 @@
 Name: Image Safari Agricultural Image Corpus
 Description: >
-  Image Safari is a diversity-driven agricultural image corpus assembled to
-  capture variability across 18 crops across nine countries: Tanzania, Côte
-  d'Ivoire, Madagascar, Nigeria, Senegal, Kenya, Ghana, Uganda, and Malawi.
-  Multiple imaging devices and field conditions are represented, with particular
-  emphasis on smallholder farming systems common in the Global South. The
-  published collection contains 6,081,555 cleaned field photographs.
+  Image Safari is a diversity-driven agricultural image corpus of 6,081,555
+  cleaned field photographs across 18 crops and nine countries: Tanzania,
+  Côte d'Ivoire, Madagascar, Nigeria, Senegal, Kenya, Ghana, Uganda, and
+  Malawi. A subset of 30,765 annotated images supports organ-level computer
+  vision tasks.
 Documentation: >
-  Dataset documentation, access instructions, metadata descriptions, curation
-  methods, and known characteristics are available at
-  https://github.com/CIAT-Artemis/imagesafari_artemis-crop-images/blob/main/docs/imagesafari.md.
-Contact: https://github.com/CIAT-Artemis/imagesafari_artemis-crop-images/issues
+  Dataset documentation, metadata schemas, curation methods, and access
+  instructions are available at
+  https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/blob/main/docs/imagesafari.md.
+Contact: https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/issues
 ManagedBy: "[Alliance of Bioversity International and CIAT](https://alliancebioversityciat.org/)"
 UpdateFrequency: New curated releases are published as they become available.
 Collabs:
@@ -27,18 +26,16 @@ Tags:
 License: "[Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)"
 Citation: >
   Alliance of Bioversity International and CIAT (2026). Image Safari
-  Agricultural Image Corpus. Registry of Open Data on AWS. When using the
-  collection, cite the dataset, provide a link to the license, and indicate
-  whether changes were made.
+  Agricultural Image Corpus. FAIRGrounds / Registry of Open Data on AWS.
 Resources:
-  - Description: Curated crop images in JPEG, PNG, and WebP formats across 18 crops and nine countries.
+  - Description: 6,081,555 curated crop images in JPEG format across 18 crops.
     ARN: arn:aws:s3:::<S3-BUCKET-NAME>/ImageSafari
     Region: <AWS-REGION>
     Type: S3 Bucket
 DataAtWork:
   Tutorials:
     - Title: Get To Know A Dataset - Image Safari Agricultural Image Corpus
-      URL: https://github.com/CIAT-Artemis/imagesafari_artemis-crop-images/blob/main/get-to-know-a-dataset-imagesafari.ipynb
-      NotebookURL: https://github.com/CIAT-Artemis/imagesafari_artemis-crop-images/blob/main/get-to-know-a-dataset-imagesafari.ipynb
+      URL: https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/blob/main/get-to-know-a-dataset-imagesafari.ipynb
+      NotebookURL: https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/blob/main/get-to-know-a-dataset-imagesafari.ipynb
       AuthorName: Alliance of Bioversity International and CIAT
       AuthorURL: https://alliancebioversityciat.org/

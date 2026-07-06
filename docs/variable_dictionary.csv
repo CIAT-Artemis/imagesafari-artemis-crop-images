@@ -1,0 +1,19 @@
+field_name,type,description,dataset,required
+crop,string,Crop species depicted in the image,both,yes
+site,string,Collection site or research centre identifier,both,yes
+date_captured,date,Image capture date in YYYY-MM-DD form,both,yes
+latitude,float,GPS latitude in decimal degrees,both,no
+longitude,float,GPS longitude in decimal degrees,both,no
+growth_stage,string,Phenological growth stage at time of capture,both,yes
+country,string,Country of collection,both,yes
+capture_platform,string,"Acquisition platform: push-cart, handheld, GoPro, or smartphone",both,no
+viewpoint,string,"Camera viewpoint: top-down, above-canopy, or under-canopy",artemis,no
+capture_method,string,Image-acquisition approach or device class,imagesafari,no
+capture_angle,string,Camera angle relative to the horizontal,imagesafari,no
+plot_id,string,Unique plot identifier linking imagery to field records,artemis,yes
+variety_id,string,Variety or genotype identifier,artemis,no
+treatment,string,Applied treatment or management factor,artemis,no
+annotation_track,string,"automated or benchmark",both,no
+annotation_type,string,"bounding box, masks, point, scribble, or polygon",both,no
+file_format,string,Image file extension; release images are JPEG,both,yes
+object_key,string,S3 or FAIRGrounds object key,both,yes

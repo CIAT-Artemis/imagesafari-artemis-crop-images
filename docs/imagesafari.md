@@ -7,18 +7,18 @@ on smallholder farming systems common in the Global South that remain
 substantially underrepresented in existing public datasets.
 
 The corpus is maintained by the
-[Alliance of Bioversity International and CIAT](https://alliancebioversityciat.org/)
-and is being prepared for publication through the Registry of Open Data on AWS.
+[Alliance of Bioversity International and CIAT](https://alliancebioversityciat.org/).
 
 ## Dataset summary
 
 | Attribute | Value |
 |---|---:|
 | Published images | 6,081,555 |
+| Annotated images | 30,765 |
 | Crops | 18 |
 | Countries | 9 |
 | Contributing research centres | 15 |
-| Image formats | JPEG, PNG, WebP |
+| Image format | JPEG |
 | License | CC BY-SA 4.0 |
 
 The published collection contains **6,081,555 cleaned images** selected from a
@@ -184,19 +184,32 @@ subtree for each crop.
 | `year` | Year of capture |
 | `capture_date` | Capture date in `YYYY-MM-DD` form, where available |
 | `centre` | Contributing research centre or station |
-| `file_format` | JPEG, PNG, or WebP, inferred from the extension |
+| `file_format` | JPEG for release images |
+
+## Public access
+
+| Channel | Location |
+|---|---|
+| Primary dataset release | FAIRGrounds (accession to be assigned) |
+| Bulk download | AWS Open Data (`s3://<S3-BUCKET-NAME>/ImageSafari/`) |
+| Schemas, splits, tutorials | [GitHub repository](https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images) |
 
 ## Annotations
 
 The `annotations/` subtree provides two tracks:
 
-- **automated/** — model-generated labels produced at scale across the corpus
-- **benchmark/** — expert-reviewed annotations intended for evaluation and
-  method comparison
+- **automated/** — higher-volume labels suitable for pre-training
+- **benchmark/** — expert-reviewed labels for method comparison
+
+The benchmark track is populated for four crops: banana, common bean, potato,
+and sorghum. Annotation types include bounding box, masks, point, scribble, and
+polygon formats. See [`annotation_guidelines.md`](annotation_guidelines.md).
 
 ## Included data
 
-The release contains cleaned still images in JPEG, PNG, and WebP formats.
+The release contains cleaned still images in JPEG format at original
+acquisition resolution. Segmentation outputs are PNG masks. Object-level
+annotations are COCO JSON. Metadata tables are CSV with Parquet copies.
 
 The following materials are not included:
 
@@ -300,7 +313,7 @@ The dataset is released under the
 ## Citation
 
 > Alliance of Bioversity International and CIAT (2026). *Image Safari
-> Agricultural Image Corpus*. Registry of Open Data on AWS.
+> Agricultural Image Corpus*. FAIRGrounds / Registry of Open Data on AWS.
 
 Also include the date on which the data were accessed and identify the release
 or S3 prefix used in the analysis.
@@ -308,7 +321,7 @@ or S3 prefix used in the analysis.
 ## Contact
 
 Questions, corrections, and dataset issues can be submitted through the
-[repository issue tracker](https://github.com/CIAT-Artemis/imagesafari_artemis-crop-images/issues).
+[repository issue tracker](https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/issues).
 
 ## Acknowledgements
 
