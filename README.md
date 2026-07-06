@@ -1,6 +1,6 @@
-# ImageSafari Crop Image Collection
+# ImageSafari_Artemis Crop Image Collection
 
-The ImageSafari Crop Image Collection is a curated open dataset of 6,081,555
+The ImageSafari_Artemis Crop Image Collection is a curated open dataset of 6,081,555
 field images representing 18 staple food and legume crops. The images were
 collected at research stations and farms in eight African countries through 15
 research centres.

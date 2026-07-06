@@ -1,6 +1,6 @@
-Name: ImageSafari Crop Image Collection
+Name: ImageSafari_Artemis Crop Image Collection
 Description: >
-  The ImageSafari Crop Image Collection is a curated set of 6,081,555 field
+  The ImageSafari_Artemis Crop Image Collection is a curated set of 6,081,555 field
   photographs representing 18 staple food and legume crops. Images were
   collected at research stations and farms across eight African countries
   through 15 research centres. The collection supports computer-vision
@@ -26,18 +26,18 @@ Tags:
   - life sciences
 License: "[Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)"
 Citation: >
-  Alliance of Bioversity International and CIAT (2026). ImageSafari Crop Image
+  Alliance of Bioversity International and CIAT (2026). ImageSafari_Artemis Crop Image
   Collection. Registry of Open Data on AWS. When using the collection, cite
   the dataset, provide a link to the license, and indicate whether changes were
   made.
 Resources:
-  - Description: Curated ImageSafari crop images in JPEG, PNG, and WebP formats.
+  - Description: Curated ImageSafari_Artemis crop images in JPEG, PNG, and WebP formats.
     ARN: arn:aws:s3:::<S3-BUCKET-NAME>
     Region: <AWS-REGION>
     Type: S3 Bucket
 DataAtWork:
   Tutorials:
-    - Title: Get To Know A Dataset - ImageSafari Crop Image Collection
+    - Title: Get To Know A Dataset - ImageSafari_Artemis Crop Image Collection
       URL: https://github.com/CIAT-Artemis/imagesafari-crop-images/blob/main/get-to-know-a-dataset-imagesafari.ipynb
       NotebookURL: https://github.com/CIAT-Artemis/imagesafari-crop-images/blob/main/get-to-know-a-dataset-imagesafari.ipynb
       AuthorName: Alliance of Bioversity International and CIAT

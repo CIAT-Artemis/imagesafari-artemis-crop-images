@@ -1,6 +1,6 @@
 # Dataset License
 
-The ImageSafari Crop Image Collection is licensed under the
+The ImageSafari_Artemis Crop Image Collection is licensed under the
 [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
 You may share and adapt the dataset for any purpose, including commercial use,
