@@ -13,9 +13,9 @@ and is being prepared for publication through the Registry of Open Data on AWS.
 
 | File | Purpose |
 |---|---|
-| [`imagesafari-crop-images.md`](imagesafari-crop-images.md) | Dataset documentation, structure, access instructions, curation summary, and known characteristics |
-| [`imagesafari-crop-images.yaml`](imagesafari-crop-images.yaml) | Metadata entry for the Registry of Open Data on AWS |
-| [`get-to-know-a-dataset-imagesafari.ipynb`](get-to-know-a-dataset-imagesafari.ipynb) | Introductory AWS dataset tutorial |
+| [`imagesafari_artemis-crop-images.md`](imagesafari_artemis-crop-images.md) | Dataset documentation, structure, access instructions, curation summary, and known characteristics |
+| [`imagesafari_artemis-crop-images.yaml`](imagesafari_artemis-crop-images.yaml) | Metadata entry for the Registry of Open Data on AWS |
+| [`get-to-know-a-dataset-imagesafari_artemis.ipynb`](get-to-know-a-dataset-imagesafari_artemis.ipynb) | Introductory AWS dataset tutorial |
 | [`CITATION.cff`](CITATION.cff) | Machine-readable citation metadata |
 | [`LICENSE.md`](LICENSE.md) | Dataset license notice |
 
@@ -36,11 +36,11 @@ anonymous access without an AWS account.
 
 ## Documentation
 
-See [`imagesafari-crop-images.md`](imagesafari-crop-images.md) for the complete
+See [`imagesafari_artemis-crop-images.md`](imagesafari_artemis-crop-images.md) for the complete
 dataset description, crop counts, metadata fields, access examples, curation
 method, citation guidance, and limitations.
 
 ## Contact
 
 Questions, corrections, and dataset issues can be submitted through the
-[repository issue tracker](https://github.com/CIAT-Artemis/imagesafari-crop-images/issues).
+[repository issue tracker](https://github.com/CIAT-Artemis/imagesafari_artemis-crop-images/issues).

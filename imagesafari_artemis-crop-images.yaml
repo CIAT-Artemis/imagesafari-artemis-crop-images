@@ -9,8 +9,8 @@ Description: >
 Documentation: >
   Dataset documentation, access instructions, metadata descriptions, curation
   methods, and known characteristics are available at
-  https://github.com/CIAT-Artemis/imagesafari-crop-images/blob/main/imagesafari-crop-images.md.
-Contact: https://github.com/CIAT-Artemis/imagesafari-crop-images/issues
+  https://github.com/CIAT-Artemis/imagesafari_artemis-crop-images/blob/main/imagesafari_artemis-crop-images.md.
+Contact: https://github.com/CIAT-Artemis/imagesafari_artemis-crop-images/issues
 ManagedBy: "[Alliance of Bioversity International and CIAT](https://alliancebioversityciat.org/)"
 UpdateFrequency: New curated releases are published as they become available.
 Collabs:
@@ -38,7 +38,7 @@ Resources:
 DataAtWork:
   Tutorials:
     - Title: Get To Know A Dataset - ImageSafari_Artemis Crop Image Collection
-      URL: https://github.com/CIAT-Artemis/imagesafari-crop-images/blob/main/get-to-know-a-dataset-imagesafari.ipynb
-      NotebookURL: https://github.com/CIAT-Artemis/imagesafari-crop-images/blob/main/get-to-know-a-dataset-imagesafari.ipynb
+      URL: https://github.com/CIAT-Artemis/imagesafari_artemis-crop-images/blob/main/get-to-know-a-dataset-imagesafari_artemis.ipynb
+      NotebookURL: https://github.com/CIAT-Artemis/imagesafari_artemis-crop-images/blob/main/get-to-know-a-dataset-imagesafari_artemis.ipynb
       AuthorName: Alliance of Bioversity International and CIAT
       AuthorURL: https://alliancebioversityciat.org/

@@ -260,7 +260,7 @@ or S3 prefix used in the analysis.
 ## Contact
 
 Questions, corrections, and dataset issues can be submitted through the
-[ImageSafari_Artemis repository issue tracker](https://github.com/CIAT-Artemis/imagesafari-crop-images/issues).
+[ImageSafari_Artemis repository issue tracker](https://github.com/CIAT-Artemis/imagesafari_artemis-crop-images/issues).
 
 ## Acknowledgements
 
