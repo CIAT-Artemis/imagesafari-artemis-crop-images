@@ -16,4 +16,4 @@ treatment,string,Applied treatment or management factor,artemis,no
 annotation_track,string,"standard or benchmark",both,no
 annotation_type,string,"bounding box, masks, point, scribble, or polygon",both,no
 file_format,string,Image file extension; release images are JPEG,both,yes
-object_key,string,S3 or FAIRGrounds object key,both,yes
+object_key,string,S3 object key,both,yes

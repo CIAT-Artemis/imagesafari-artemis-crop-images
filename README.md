@@ -41,8 +41,7 @@ includes organ-level labels in **standard** and **benchmark** annotation tracks.
 
 | Asset | Location | Notes |
 |---|---|---|
-| Dataset files (images, annotations, metadata) | [FAIRGrounds](https://fairgrounds.org) | Primary release; accession to be assigned at publication |
-| Bulk anonymous download | Registry of Open Data on AWS | S3 bucket and Region to be added after provisioning |
+| Images, annotations, and metadata | [Registry of Open Data on AWS](https://registry.opendata.aws/) | Public S3 bucket; bucket name and Region to be added after provisioning |
 | Documentation, schemas, splits, tutorials | This GitHub repository | [`docs/`](docs/) |
 | Issues and corrections | [GitHub Issues](https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/issues) | |
 
@@ -111,7 +110,7 @@ ImageSafari_Artemis collection.
 ## Citation
 
 Cite the data descriptor paper and identify the ImageSafari_Artemis release
-version used. Also cite the FAIRGrounds accession or AWS release prefix and the
+version used. Also cite the AWS Open Data registry entry, S3 bucket prefix, and the
 date accessed.
 
 ## Contact

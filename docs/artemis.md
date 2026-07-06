@@ -100,9 +100,8 @@ Annotated Artemis subsets use polygon and bounding-box formats:
 
 | Channel | Location |
 |---|---|
-| Primary dataset release | FAIRGrounds (accession to be assigned) |
-| Bulk download | AWS Open Data (`s3://<S3-BUCKET-NAME>/Artemis/`) |
-| Schemas and splits | [GitHub repository](https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images) |
+| Dataset hosting | [Registry of Open Data on AWS](https://registry.opendata.aws/) (`s3://<S3-BUCKET-NAME>/Artemis/`) |
+| Documentation and schemas | [GitHub repository](https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images) |
 
 ```bash
 aws s3 ls --no-sign-request --region <AWS-REGION> s3://<S3-BUCKET-NAME>/Artemis/
@@ -115,7 +114,7 @@ Released under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 ## Citation
 
 > Alliance of Bioversity International and CIAT (2026). *ImageSafari_Artemis
-> Crop Image Collection*. FAIRGrounds / Registry of Open Data on AWS.
+> Crop Image Collection*. Registry of Open Data on AWS.
 
 ## Contact
 

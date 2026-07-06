@@ -7,7 +7,7 @@ in this file.
 
 ### Documentation
 
-- Consolidate AWS registry metadata into a single `imagesafari_artemis-crop-images.yaml`.
+- Remove FAIRGrounds references; AWS Open Data is the sole data hosting platform.
 - Treat ImageSafari_Artemis as one unified dataset with Artemis and Image Safari components.
 - Rename tutorial notebook to `get-to-know-a-dataset-imagesafari_artemis.ipynb`.
 - Rename annotation track `automated` to `standard` for clarity.

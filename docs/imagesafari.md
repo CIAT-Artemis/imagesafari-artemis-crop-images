@@ -190,9 +190,8 @@ subtree for each crop.
 
 | Channel | Location |
 |---|---|
-| Primary dataset release | FAIRGrounds (accession to be assigned) |
-| Bulk download | AWS Open Data (`s3://<S3-BUCKET-NAME>/ImageSafari/`) |
-| Schemas, splits, tutorials | [GitHub repository](https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images) |
+| Dataset hosting | [Registry of Open Data on AWS](https://registry.opendata.aws/) (`s3://<S3-BUCKET-NAME>/ImageSafari/`) |
+| Documentation, schemas, splits, tutorials | [GitHub repository](https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images) |
 
 ## Annotations
 
@@ -314,7 +313,7 @@ The dataset is released under the
 ## Citation
 
 > Alliance of Bioversity International and CIAT (2026). *ImageSafari_Artemis
-> Crop Image Collection*. FAIRGrounds / Registry of Open Data on AWS.
+> Crop Image Collection*. Registry of Open Data on AWS.
 
 Also include the date on which the data were accessed and identify the release
 or S3 prefix used in the analysis.
