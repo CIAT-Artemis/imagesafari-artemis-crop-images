@@ -109,7 +109,7 @@ object detection, and instance segmentation.
 Images are stored as JPEG files at original acquisition resolution. Segmentation
 outputs are provided as PNG masks with matching filenames. Object-level
 annotations are stored in COCO JSON format. **Artemis** metadata is provided as
-Parquet and CSV tables under each crop's `metadata/` subtree. **Image Safari**
+Parquet and CSV files under each crop's `metadata/` subtree. **Image Safari**
 metadata is provided as JSON sidecar files.
 
 ## Repository contents

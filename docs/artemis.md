@@ -78,7 +78,7 @@ Artemis/
 ```
 
 Images are stored as JPEG files. Segmentation outputs are PNG masks. Object-level
-annotations are COCO JSON. Metadata tables are provided as Parquet and CSV files
+annotations are COCO JSON. Metadata files are provided as Parquet and CSV
 under each crop's `metadata/` subtree.
 
 ## Metadata
