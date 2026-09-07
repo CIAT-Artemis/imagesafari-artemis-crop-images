@@ -114,7 +114,7 @@ Annotated Artemis subsets:
 | Documentation and schemas | [GitHub repository](https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images) |
 
 ```bash
-aws s3 ls --no-sign-request --region us-east-1 s3://alliance-artemis-imagesafari/Artemis/
+aws s3 ls --no-sign-request --region us-west-2 s3://alliance-artemis-imagesafari/Artemis/
 ```
 
 ## License

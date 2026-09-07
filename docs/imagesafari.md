@@ -227,20 +227,20 @@ access, so no AWS account or credentials are required.
 List crop directories:
 
 ```bash
-aws s3 ls --no-sign-request --region us-east-1 s3://alliance-artemis-imagesafari/ImageSafari/
+aws s3 ls --no-sign-request --region us-west-2 s3://alliance-artemis-imagesafari/ImageSafari/
 ```
 
 List images for one crop:
 
 ```bash
-aws s3 ls --no-sign-request --region us-east-1 --recursive \
+aws s3 ls --no-sign-request --region us-west-2 --recursive \
   s3://alliance-artemis-imagesafari/ImageSafari/potato/images/
 ```
 
 Download one crop:
 
 ```bash
-aws s3 sync --no-sign-request --region us-east-1 \
+aws s3 sync --no-sign-request --region us-west-2 \
   s3://alliance-artemis-imagesafari/ImageSafari/potato/ ./potato/
 ```
 
@@ -252,7 +252,7 @@ from botocore import UNSIGNED
 from botocore.config import Config
 
 bucket = "alliance-artemis-imagesafari"
-region = "us-east-1"
+region = "us-west-2"
 
 s3 = boto3.client(
     "s3",

@@ -56,11 +56,11 @@ Resources:
       annotations (COCO JSON) organised by crop species, collection site, and
       acquisition date. Parquet and CSV metadata tables under each crop
       directory's metadata/ subtree.
-    ARN: arn:aws:s3:::[S3_BUCKET_NAME]/Artemis
-    Region: us-east-1
+    ARN: arn:aws:s3:::alliance-artemis-imagesafari/Artemis
+    Region: us-west-2
     Type: S3 Bucket
     Explore:
-      - '[Browse Bucket](https://[S3_BUCKET_NAME].s3.amazonaws.com/index.html#Artemis/)'
+      - '[Browse Bucket](https://alliance-artemis-imagesafari.s3.amazonaws.com/index.html#Artemis/)'
   - Description: >
       Image Safari diversity-driven crop images (6,081,555 images, 18 crops)
       across nine countries in sub-Saharan Africa. Field images (JPEG, original
@@ -68,11 +68,11 @@ Resources:
       object-level annotations (COCO JSON) organised by crop species,
       collection site, and acquisition date. Parquet and CSV metadata tables
       under each crop directory's metadata/ subtree.
-    ARN: arn:aws:s3:::[S3_BUCKET_NAME]/ImageSafari
-    Region: us-east-1
+    ARN: arn:aws:s3:::alliance-artemis-imagesafari/ImageSafari
+    Region: us-west-2
     Type: S3 Bucket
     Explore:
-      - '[Browse Bucket](https://[S3_BUCKET_NAME].s3.amazonaws.com/index.html#ImageSafari/)'
+      - '[Browse Bucket](https://alliance-artemis-imagesafari.s3.amazonaws.com/index.html#ImageSafari/)'
 
 DataAtWork:
   Tutorials:

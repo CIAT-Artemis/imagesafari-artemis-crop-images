@@ -61,7 +61,7 @@ Image Safari annotations are released under a **standard** track and include
 
 | Asset | Location | Notes |
 |---|---|---|
-| Images, annotations, and metadata | [Registry of Open Data on AWS](https://registry.opendata.aws/artemis-image-safari) | Public S3 bucket `alliance-artemis-imagesafari` (`us-east-1`) |
+| Images, annotations, and metadata | [Registry of Open Data on AWS](https://registry.opendata.aws/artemis-image-safari) | Public S3 bucket `s3://alliance-artemis-imagesafari/` (`us-west-2`) |
 | Documentation, schemas, splits, tutorials | This GitHub repository | [`docs/`](docs/) |
 | Introductory tutorial | [`get-to-know-a-dataset-imagesafari_artemis.ipynb`](get-to-know-a-dataset-imagesafari_artemis.ipynb) | Browse S3 anonymously; examples use Amazon S3, SageMaker, Glue, and Athena |
 | Issues and corrections | [GitHub Issues](https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/issues) | |
