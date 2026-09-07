@@ -141,7 +141,8 @@ The repository is organized by crop. Each crop directory contains:
 
 - an `images/` subtree
 - an `annotations/standard/` subtree organized by annotation modality
-- a `metadata/` subtree with acquisition and provenance records
+- a `metadata/` subtree and/or per-image JSON sidecar files with acquisition
+  and provenance records
 
 Representative structure:
 
@@ -172,8 +173,8 @@ read metadata defensively and treat unavailable values as `unknown`.
 
 ## Metadata
 
-Metadata are derived from the object key, source inventory, and the `metadata/`
-subtree for each crop.
+Metadata are derived from the object key, source inventory, and JSON sidecar
+files associated with each image.
 
 | Field | Description |
 |---|---|
@@ -212,7 +213,7 @@ See [`annotation_guidelines.md`](annotation_guidelines.md).
 
 The release contains cleaned still images in JPEG format at original
 acquisition resolution. Segmentation outputs are PNG masks. Object-level
-annotations are COCO JSON. Metadata tables are CSV with Parquet copies.
+annotations are COCO JSON. Per-image metadata is provided as JSON sidecar files.
 
 The following materials are not included:
 
