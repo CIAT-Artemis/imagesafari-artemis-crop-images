@@ -139,9 +139,8 @@ or winter. Seasonal coverage varies substantially by crop.
 
 The repository is organized by crop. Each crop directory contains:
 
-- an `images/` subtree organized by collection site and acquisition date
-- an `annotations/` subtree containing both standard and benchmark annotation
-  tracks
+- an `images/` subtree
+- an `annotations/standard/` subtree organized by annotation modality
 - a `metadata/` subtree with acquisition and provenance records
 
 Representative structure:
@@ -150,12 +149,13 @@ Representative structure:
 ImageSafari/
 └── <crop>/
     ├── images/
-    │   └── <collection-site>/
-    │       └── <acquisition-date>/
-    │           └── <file>.<extension>
     ├── annotations/
-    │   ├── standard/
-    │   └── benchmark/
+    │   └── standard/
+    │       ├── point/
+    │       ├── semantic_segmentation/
+    │       ├── scribble/
+    │       ├── object_detection/
+    │       └── instance_segmentation/
     └── metadata/
 ```
 
@@ -164,7 +164,7 @@ including country, season, capture method, date, contributing centre, and file
 format:
 
 ```text
-s3://<S3-BUCKET-NAME>/ImageSafari/<crop>/images/<collection-site>/<acquisition-date>/<file>.<extension>
+s3://alliance-artemis-imagesafari/ImageSafari/<crop>/images/...
 ```
 
 The precise key structure can vary across contributing centres. Users should
@@ -190,20 +190,23 @@ subtree for each crop.
 
 | Channel | Location |
 |---|---|
-| Dataset hosting | [Registry of Open Data on AWS](https://registry.opendata.aws/) (`s3://<S3-BUCKET-NAME>/ImageSafari/`) |
+| Dataset hosting | [Registry of Open Data on AWS](https://registry.opendata.aws/artemis-image-safari) (`s3://alliance-artemis-imagesafari/ImageSafari/`) |
 | Documentation, schemas, splits, tutorials | [GitHub repository](https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images) |
 
 ## Annotations
 
-The `annotations/` subtree provides two tracks:
+Image Safari annotations are released under a **standard** track and organized
+by modality:
 
-- **standard/** — labels from the scaled annotation pipeline, suitable for
-  pre-training
-- **benchmark/** — expert-reviewed labels for method comparison
+| Modality | Directory |
+|---|---|
+| Point | `annotations/standard/point/` |
+| Semantic segmentation | `annotations/standard/semantic_segmentation/` |
+| Scribble | `annotations/standard/scribble/` |
+| Object detection | `annotations/standard/object_detection/` |
+| Instance segmentation | `annotations/standard/instance_segmentation/` |
 
-The benchmark track is populated for four crops: banana, common bean, potato,
-and sorghum. Annotation types include bounding box, masks, point, scribble, and
-polygon formats. See [`annotation_guidelines.md`](annotation_guidelines.md).
+See [`annotation_guidelines.md`](annotation_guidelines.md).
 
 ## Included data
 
@@ -224,21 +227,21 @@ access, so no AWS account or credentials are required.
 List crop directories:
 
 ```bash
-aws s3 ls --no-sign-request --region <AWS-REGION> s3://<S3-BUCKET-NAME>/ImageSafari/
+aws s3 ls --no-sign-request --region us-east-1 s3://alliance-artemis-imagesafari/ImageSafari/
 ```
 
 List images for one crop:
 
 ```bash
-aws s3 ls --no-sign-request --region <AWS-REGION> --recursive \
-  s3://<S3-BUCKET-NAME>/ImageSafari/potato/images/
+aws s3 ls --no-sign-request --region us-east-1 --recursive \
+  s3://alliance-artemis-imagesafari/ImageSafari/potato/images/
 ```
 
 Download one crop:
 
 ```bash
-aws s3 sync --no-sign-request --region <AWS-REGION> \
-  s3://<S3-BUCKET-NAME>/ImageSafari/potato/ ./potato/
+aws s3 sync --no-sign-request --region us-east-1 \
+  s3://alliance-artemis-imagesafari/ImageSafari/potato/ ./potato/
 ```
 
 Use anonymous access from Python:
@@ -248,8 +251,8 @@ import boto3
 from botocore import UNSIGNED
 from botocore.config import Config
 
-bucket = "<S3-BUCKET-NAME>"
-region = "<AWS-REGION>"
+bucket = "alliance-artemis-imagesafari"
+region = "us-east-1"
 
 s3 = boto3.client(
     "s3",

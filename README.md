@@ -51,16 +51,17 @@ emphasis on smallholder farming systems common in the Global South that remain
 substantially underrepresented in existing public datasets.
 
 A subset of **42,981 annotated images** (12,216 Artemis; 30,765 Image Safari)
-includes organ-level labels in **standard** and **benchmark** annotation tracks.
-The **benchmark** track provides expert-reviewed annotations for banana, common
-bean, potato, and sorghum; the **standard** track covers the broader annotated
-subset produced through the scaled annotation pipeline.
+includes organ-level labels organized by annotation task. Artemis provides
+**instance segmentation**, **object detection**, and **image classification**.
+Image Safari annotations are released under a **standard** track and include
+**point**, **semantic segmentation**, **scribble**, **object detection**, and
+**instance segmentation**.
 
 ## Public access
 
 | Asset | Location | Notes |
 |---|---|---|
-| Images, annotations, and metadata | [Registry of Open Data on AWS](https://registry.opendata.aws/artemis-image-safari) | Public S3 bucket (`us-east-1`); bucket name to be added after provisioning |
+| Images, annotations, and metadata | [Registry of Open Data on AWS](https://registry.opendata.aws/artemis-image-safari) | Public S3 bucket `alliance-artemis-imagesafari` (`us-east-1`) |
 | Documentation, schemas, splits, tutorials | This GitHub repository | [`docs/`](docs/) |
 | Introductory tutorial | [`get-to-know-a-dataset-imagesafari_artemis.ipynb`](get-to-know-a-dataset-imagesafari_artemis.ipynb) | Browse S3 anonymously; examples use Amazon S3, SageMaker, Glue, and Athena |
 | Issues and corrections | [GitHub Issues](https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/issues) | |
@@ -71,28 +72,39 @@ corrections are versioned and documented in [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Repository structure
 
-The collection is organized into the Artemis and Image Safari datasets, grouped by crop. Each crop directory contains an
-`images/` subtree organized by collection site and acquisition date, an
-`annotations/` subtree with **standard** and **benchmark** tracks, and a
-`metadata/` subtree.
+The collection is hosted in the `alliance-artemis-imagesafari` S3 bucket and is
+organized into the Artemis and Image Safari datasets, grouped by crop. Each crop
+directory contains an `images/` subtree, an `annotations/` subtree, and a
+`metadata/` subtree. Artemis annotations are organized by task type; Image Safari
+annotations are organized under a **standard** track by modality.
 
 ```text
-Artemis/
-└── <crop>/
-    ├── images/<collection-site>/<acquisition-date>/
-    ├── annotations/
-    │   ├── standard/
-    │   └── benchmark/
-    └── metadata/
-
-ImageSafari/
-└── <crop>/
-    ├── images/<collection-site>/<acquisition-date>/
-    ├── annotations/
-    │   ├── standard/
-    │   └── benchmark/    # banana, common-bean, potato, sorghum
-    └── metadata/
+alliance-artemis-imagesafari/
+├── Artemis/
+│   └── <crop>/                    # e.g. cowpea, common-bean, soybean, sorghum
+│       ├── images/
+│       ├── annotations/
+│       │   ├── instance_segmentation/
+│       │   ├── object_detection/
+│       │   └── image_classification/
+│       └── metadata/
+└── ImageSafari/
+    └── <crop>/
+        ├── images/
+        ├── annotations/
+        │   └── standard/
+        │       ├── point/
+        │       ├── semantic_segmentation/
+        │       ├── scribble/
+        │       ├── object_detection/
+        │       └── instance_segmentation/
+        └── metadata/
 ```
+
+**Artemis** annotations support three tasks: instance segmentation, object
+detection, and image classification. **Image Safari** annotations are organized
+under a **standard** track by modality — point, semantic segmentation, scribble,
+object detection, and instance segmentation.
 
 Images are stored as JPEG files at original acquisition resolution. Segmentation
 outputs are provided as PNG masks with matching filenames. Object-level

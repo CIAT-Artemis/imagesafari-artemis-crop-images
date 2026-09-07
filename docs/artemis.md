@@ -69,10 +69,11 @@ and Nokia handsets, reflecting realistic field phenotyping equipment.
 ```text
 Artemis/
 └── <crop>/
-    ├── images/<collection-site>/<acquisition-date>/
+    ├── images/
     ├── annotations/
-    │   ├── standard/
-    │   └── benchmark/
+    │   ├── instance_segmentation/
+    │   ├── object_detection/
+    │   └── image_classification/
     └── metadata/
 ```
 
@@ -88,7 +89,16 @@ Open Data Kit.
 
 ## Annotations
 
-Annotated Artemis subsets use polygon and bounding-box formats:
+Artemis annotations are organized by task under each crop's `annotations/`
+directory:
+
+| Task | Directory | Typical formats |
+|---|---|---|
+| Instance segmentation | `instance_segmentation/` | Polygon masks / COCO |
+| Object detection | `object_detection/` | Bounding boxes / COCO |
+| Image classification | `image_classification/` | Class labels |
+
+Annotated Artemis subsets:
 
 | Crop | Countries | Annotated images | Types |
 |---|---|---:|---|
@@ -100,11 +110,11 @@ Annotated Artemis subsets use polygon and bounding-box formats:
 
 | Channel | Location |
 |---|---|
-| Dataset hosting | [Registry of Open Data on AWS](https://registry.opendata.aws/) (`s3://<S3-BUCKET-NAME>/Artemis/`) |
+| Dataset hosting | [Registry of Open Data on AWS](https://registry.opendata.aws/artemis-image-safari) (`s3://alliance-artemis-imagesafari/Artemis/`) |
 | Documentation and schemas | [GitHub repository](https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images) |
 
 ```bash
-aws s3 ls --no-sign-request --region <AWS-REGION> s3://<S3-BUCKET-NAME>/Artemis/
+aws s3 ls --no-sign-request --region us-east-1 s3://alliance-artemis-imagesafari/Artemis/
 ```
 
 ## License
