@@ -3,7 +3,7 @@
 This repository hosts the **ImageSafari_Artemis** dataset — also listed on the
 [Registry of Open Data on AWS](https://registry.opendata.aws/) as **Artemis and
 Image Safari Agricultural Imaging Dataset** — a unified agricultural image
-collection comprising **7,469,220 field images** across two complementary
+collection comprising **7,469,218 field images** across two complementary
 datasets, **Artemis** and **Image Safari**, developed by the
 [Alliance of Bioversity International and CIAT](https://alliancebioversityciat.org/).
 
@@ -17,9 +17,9 @@ agricultural monitoring, and cross-environment generalisation research.
 
 | Dataset | Images | Crops | Countries | Focus |
 |---|---:|---:|---:|---|
-| **Artemis** | 1,387,665 | 4 | 4 | Structured phenotyping with linked field metadata |
+| **Artemis** | 1,387,663 | 4 | 4 | Structured phenotyping with linked field metadata |
 | **Image Safari** | 6,081,555 | 18 | 9 | Diversity across crops, geographies, and imaging conditions |
-| **Combined** | **7,469,220** | **18** | **11** | Unified ImageSafari_Artemis collection |
+| **Combined** | **7,469,218** | **18** | **11** | Unified ImageSafari_Artemis collection |
 
 ## Artemis
 
@@ -147,8 +147,8 @@ ImageSafari_Artemis collection.
 Cite the data descriptor paper:
 
 > Mutuvi S., Guerena D., Zych M., Henday S., Agesa B., Ghandi A., et al.
-> *Artemis and Image Safari: Large imagery datasets targeting crop species and
-> smallholder farming systems in the global south.* [PAPER_DOI_URL]
+> *Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical
+> Food Species.* [PAPER_DOI_URL]
 
 When accessing data through AWS, also cite the registry entry:
 

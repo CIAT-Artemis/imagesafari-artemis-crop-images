@@ -16,8 +16,8 @@ in this file.
 
 ### Added
 
-- Initial public release of ImageSafari_Artemis (7,469,220 images), comprising
-  Artemis (1,387,665 images, four crops) and Image Safari (6,081,555 images,
+- Initial public release of ImageSafari_Artemis (7,469,218 images), comprising
+  Artemis (1,387,663 images, four crops) and Image Safari (6,081,555 images,
   18 crops).
 - Annotated subset of 42,981 images with bounding box, mask, point, scribble,
   and polygon labels.

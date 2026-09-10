@@ -13,7 +13,7 @@ The dataset is maintained by the
 
 | Attribute | Value |
 |---|---:|
-| Images | 1,387,665 |
+| Images | 1,387,663 |
 | Annotated images | 12,216 |
 | Crops | 4 |
 | Countries | 4 |
@@ -52,7 +52,7 @@ research stations in:
 | Sorghum | United States | 58,765 |
 | Sorghum | Tanzania | 648 |
 | Soybean | Colombia | 330 |
-| **Total** | | **1,387,665** |
+| **Total** | | **1,387,663** |
 
 Counts are reported after automated quality control.
 
