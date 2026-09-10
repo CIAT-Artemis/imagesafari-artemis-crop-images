@@ -3,7 +3,92 @@ message: If you use this dataset, please cite it using the metadata below.
 title: "Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Food Species"
 type: dataset
 authors:
-  - name: Alliance of Bioversity International and CIAT
+  - family-names: Mutuvi
+    given-names: Stephen
+  - family-names: Guerena
+    given-names: David
+  - family-names: Zych
+    given-names: Marcin
+  - family-names: Henday
+    given-names: Shekinah
+  - family-names: Girma
+    given-names: Ellena
+  - family-names: Mungubariki
+    given-names: Tumaini
+  - family-names: Agesa
+    given-names: Beverly
+  - family-names: Zochowski
+    given-names: Marek
+  - family-names: Ciolek
+    given-names: Daniel
+  - family-names: Lazowik
+    given-names: Michael
+  - family-names: Chen
+    given-names: Jiehua
+  - family-names: Goeke
+    given-names: Leah
+  - family-names: Omwandho
+    given-names: Justine
+  - family-names: del Palma
+    given-names: Grace
+  - family-names: Malabi
+    given-names: Jackson
+  - family-names: Phomebeya
+    given-names: Sithembinkosi
+  - family-names: Sanena
+    given-names: Maria
+  - family-names: Marcos
+    given-names: "Juliana T. C."
+  - family-names: Ghandi
+    given-names: Harish
+  - family-names: Nas
+    given-names: Mark
+  - family-names: Rathore
+    given-names: Abhishek
+  - family-names: Mendes
+    given-names: Thiago
+  - family-names: Yadav
+    given-names: Shailesh
+  - family-names: Adjah
+    given-names: Kossi Lorimpo
+  - family-names: Woltering
+    given-names: Lennart
+  - family-names: Lekasio
+    given-names: Elice
+  - family-names: Mushi
+    given-names: Bryton
+  - family-names: Abraham
+    given-names: Leah
+  - family-names: Katunzi
+    given-names: Gaudencia
+  - family-names: Remy
+    given-names: "Sekou L."
+  - family-names: Siyavora
+    given-names: Tavonga
+  - family-names: Selvaraj
+    given-names: Michael
+  - family-names: Casas
+    given-names: Jorge
+  - family-names: Boukar
+    given-names: Ousmane
+  - family-names: Ongom
+    given-names: Patrick
+  - family-names: Nakato
+    given-names: Gloria Valentine
+  - family-names: Mwanje
+    given-names: Gerald
+  - family-names: Agre
+    given-names: Paterne
+  - family-names: Laporte
+    given-names: Marie-Angélique
+  - family-names: Asefa
+    given-names: Teshale
+  - family-names: Odama
+    given-names: Roy
+  - family-names: Mukankusi
+    given-names: Clare
+  - family-names: Wu
+    given-names: William
 year: 2026
 license: CC-BY-SA-4.0
 repository-code: https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images
@@ -20,3 +105,94 @@ keywords:
   - crop images
   - machine learning
   - phenotyping
+preferred-citation:
+  type: article
+  title: "Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Food Species"
+  authors:
+    - family-names: Mutuvi
+      given-names: Stephen
+    - family-names: Guerena
+      given-names: David
+    - family-names: Zych
+      given-names: Marcin
+    - family-names: Henday
+      given-names: Shekinah
+    - family-names: Girma
+      given-names: Ellena
+    - family-names: Mungubariki
+      given-names: Tumaini
+    - family-names: Agesa
+      given-names: Beverly
+    - family-names: Zochowski
+      given-names: Marek
+    - family-names: Ciolek
+      given-names: Daniel
+    - family-names: Lazowik
+      given-names: Michael
+    - family-names: Chen
+      given-names: Jiehua
+    - family-names: Goeke
+      given-names: Leah
+    - family-names: Omwandho
+      given-names: Justine
+    - family-names: del Palma
+      given-names: Grace
+    - family-names: Malabi
+      given-names: Jackson
+    - family-names: Phomebeya
+      given-names: Sithembinkosi
+    - family-names: Sanena
+      given-names: Maria
+    - family-names: Marcos
+      given-names: "Juliana T. C."
+    - family-names: Ghandi
+      given-names: Harish
+    - family-names: Nas
+      given-names: Mark
+    - family-names: Rathore
+      given-names: Abhishek
+    - family-names: Mendes
+      given-names: Thiago
+    - family-names: Yadav
+      given-names: Shailesh
+    - family-names: Adjah
+      given-names: Kossi Lorimpo
+    - family-names: Woltering
+      given-names: Lennart
+    - family-names: Lekasio
+      given-names: Elice
+    - family-names: Mushi
+      given-names: Bryton
+    - family-names: Abraham
+      given-names: Leah
+    - family-names: Katunzi
+      given-names: Gaudencia
+    - family-names: Remy
+      given-names: "Sekou L."
+    - family-names: Siyavora
+      given-names: Tavonga
+    - family-names: Selvaraj
+      given-names: Michael
+    - family-names: Casas
+      given-names: Jorge
+    - family-names: Boukar
+      given-names: Ousmane
+    - family-names: Ongom
+      given-names: Patrick
+    - family-names: Nakato
+      given-names: Gloria Valentine
+    - family-names: Mwanje
+      given-names: Gerald
+    - family-names: Agre
+      given-names: Paterne
+    - family-names: Laporte
+      given-names: Marie-Angélique
+    - family-names: Asefa
+      given-names: Teshale
+    - family-names: Odama
+      given-names: Roy
+    - family-names: Mukankusi
+      given-names: Clare
+    - family-names: Wu
+      given-names: William
+  year: 2026
