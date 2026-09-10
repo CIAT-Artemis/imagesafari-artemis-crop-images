@@ -17,3 +17,7 @@ annotation_track,string,"standard or benchmark",both,no
 annotation_type,string,"bounding box, masks, point, scribble, or polygon",both,no
 file_format,string,Image file extension; release images are JPEG,both,yes
 object_key,string,S3 object key,both,yes
+groundtruth_level,string,Granularity at which the ground-truth observation was recorded; image-linked means the value applies to the individual image,artemis,no
+groundtruth_trait,string,"Measured trait: pod_count, open_flower_count, open_flower_presence, plant_stand, disease_score, disease_presence, cbb, or als",artemis,no
+groundtruth_value,string,Recorded value for groundtruth_trait; a number for count or score traits or YES/NO for presence traits,artemis,no
+has_groundtruth,string,TRUE or FALSE indicating presence of ground truth,artemis,no
