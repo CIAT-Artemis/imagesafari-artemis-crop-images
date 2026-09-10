@@ -1,22 +1,39 @@
 field_name,type,description,dataset,required
-crop,string,Crop species depicted in the image,both,yes
-site,string,Collection site or research centre identifier,both,yes
-date_captured,date,Image capture date in YYYY-MM-DD form,both,yes
-latitude,float,GPS latitude in decimal degrees,both,no
-longitude,float,GPS longitude in decimal degrees,both,no
-growth_stage,string,Phenological growth stage at time of capture,both,yes
-country,string,Country of collection,both,yes
-capture_platform,string,"Acquisition platform: push-cart, handheld, GoPro, or smartphone",both,no
-viewpoint,string,"Camera viewpoint: top-down, above-canopy, or under-canopy",artemis,no
-capture_method,string,Image-acquisition approach or device class,imagesafari,no
-capture_angle,string,Camera angle relative to the horizontal,imagesafari,no
-plot_id,string,Unique plot identifier linking imagery to field records,artemis,yes
+image_id,string,Stable image identifier (content hash); sidecar field id,both,no
+object_key,string,S3 object key for the image file,both,yes
+file_format,string,Image file extension; release images are JPEG,both,yes
+crop,string,"Crop species depicted in the image; sidecar: agronomic_properties.crop_type",both,yes
+site,string,"Collection site or research centre identifier; sidecar: location_properties.site",both,yes
+centre,string,Contributing research centre or station (may match or refine site),imagesafari,no
+country,string,"Country of collection (ISO-3166 alpha-3 when from sidecar admin_level_0)",both,yes
+year,integer,Year of capture,imagesafari,no
+season,string,"Growing season when available: fall, spring, summer, or winter; may be inferred from object key",imagesafari,no
+date_captured,date,"Image capture date in YYYY-MM-DD form; sidecar: acquisition_properties.date",both,yes
+capture_time,string,"Local capture time in HH:MM:SS when available; sidecar: acquisition_properties.time",imagesafari,no
+latitude,float,"GPS latitude in decimal degrees; sidecar: location_properties.latitude",both,no
+longitude,float,"GPS longitude in decimal degrees; sidecar: location_properties.longitude",both,no
+elevation_m,float,"Elevation in metres when available; sidecar: location_properties.elevation_m",both,no
+crs,string,"Coordinate reference system; sidecar: location_properties.crs (e.g. EPSG:4326)",both,no
+growth_stage,string,"Phenological growth stage at time of capture; sidecar: agronomic_properties.growth_stage",both,yes
+plot_id,string,"Plot identifier linking imagery to field records; required for Artemis trials; sidecar: location_properties.plot_id",both,no
 variety_id,string,Variety or genotype identifier,artemis,no
 treatment,string,Applied treatment or management factor,artemis,no
+capture_platform,string,"Acquisition platform: push-cart, handheld, GoPro, or smartphone",both,no
+device,string,"Capture device class when available (e.g. mobile); sidecar: device",imagesafari,no
+capture_method,string,"Image-acquisition approach or device class (e.g. phone_approach); may be derived from object key",imagesafari,no
+viewpoint,string,"Camera viewpoint: top-down, above-canopy, or under-canopy",artemis,no
+capture_angle,string,Camera angle relative to the horizontal when recorded as a single summary value,imagesafari,no
+azimuth,float,"Camera azimuth in degrees; sidecar: acquisition_properties.azimuth",imagesafari,no
+pitch,float,"Camera pitch in degrees; sidecar: acquisition_properties.pitch",imagesafari,no
+roll,float,"Camera roll in degrees; sidecar: acquisition_properties.roll",imagesafari,no
+light_source,string,"Illumination source; sidecar: acquisition_properties.light_source (e.g. natural)",imagesafari,no
+camera_make,string,"Camera manufacturer; sidecar: camera_properties.make",both,no
+camera_model,string,"Camera model; sidecar: camera_properties.model",both,no
+image_height,integer,"Image height in pixels; sidecar: image_quality.height",both,no
+image_width,integer,"Image width in pixels; sidecar: image_quality.width",both,no
+orientation,string,"Image orientation: portrait or landscape; sidecar: image_quality.orientation",both,no
 annotation_track,string,"standard or benchmark",both,no
-annotation_type,string,"bounding box, masks, point, scribble, or polygon",both,no
-file_format,string,Image file extension; release images are JPEG,both,yes
-object_key,string,S3 object key,both,yes
+annotation_type,string,"Annotation representation: bounding box, masks, point, scribble, polygon, instance_segmentation, object_detection, image_classification, or semantic_segmentation",both,no
 groundtruth_level,string,Granularity at which the ground-truth observation was recorded; image-linked means the value applies to the individual image,artemis,no
 groundtruth_trait,string,"Measured trait: pod_count, open_flower_count, open_flower_presence, plant_stand, disease_score, disease_presence, cbb, or als",artemis,no
 groundtruth_value,string,Recorded value for groundtruth_trait; a number for count or score traits or YES/NO for presence traits,artemis,no
