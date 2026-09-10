@@ -124,18 +124,9 @@ Released under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ## Citation
 
-> Stephen Mutuvi, David Guerena, Marcin Zych, Shekinah Henday, Ellena Girma,
-> Tumaini Mungubariki, Beverly Agesa, Marek Zochowski, Daniel Ciolek, Michael
-> Lazowik, Jiehua Chen, Leah Goeke, Justine Omwandho, Grace del Palma, Jackson
-> Malabi, Sithembinkosi Phomebeya, Maria Sanena, Juliana T. C. Marcos, Harish
-> Ghandi, Mark Nas, Abhishek Rathore, Thiago Mendes, Shailesh Yadav, Kossi
-> Lorimpo Adjah, Lennart Woltering, Elice Lekasio, Bryton Mushi, Leah Abraham,
-> Gaudencia Katunzi, Sekou L. Remy, Tavonga Siyavora, Michael Selvaraj, Jorge
-> Casas, Ousmane Boukar, Patrick Ongom, Gloria Valentine Nakato, Gerald Mwanje,
-> Paterne Agre, Marie-Angélique Laporte, Teshale Asefa, Roy Odama, Clare
-> Mukankusi, and William Wu (2026). *Artemis and Image Safari - Crop Imagery
-> Datasets Spanning Globally Critical Food Species*. Registry of Open Data on
-> AWS.
+> Mutuvi S., Guerena D., Zych M., Henday S., Agesa B., Ghandi H., et al.
+> (2026). *Artemis and Image Safari - Crop Imagery Datasets Spanning Globally
+> Critical Food Species*. Registry of Open Data on AWS.
 
 ## Contact
 

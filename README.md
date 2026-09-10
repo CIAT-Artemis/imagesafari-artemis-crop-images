@@ -147,17 +147,9 @@ Artemis and Image Safari collection.
 
 Cite the data descriptor paper:
 
-> Stephen Mutuvi, David Guerena, Marcin Zych, Shekinah Henday, Ellena Girma,
-> Tumaini Mungubariki, Beverly Agesa, Marek Zochowski, Daniel Ciolek, Michael
-> Lazowik, Jiehua Chen, Leah Goeke, Justine Omwandho, Grace del Palma, Jackson
-> Malabi, Sithembinkosi Phomebeya, Maria Sanena, Juliana T. C. Marcos, Harish
-> Ghandi, Mark Nas, Abhishek Rathore, Thiago Mendes, Shailesh Yadav, Kossi
-> Lorimpo Adjah, Lennart Woltering, Elice Lekasio, Bryton Mushi, Leah Abraham,
-> Gaudencia Katunzi, Sekou L. Remy, Tavonga Siyavora, Michael Selvaraj, Jorge
-> Casas, Ousmane Boukar, Patrick Ongom, Gloria Valentine Nakato, Gerald Mwanje,
-> Paterne Agre, Marie-Angélique Laporte, Teshale Asefa, Roy Odama, Clare
-> Mukankusi, and William Wu. *Artemis and Image Safari - Crop Imagery Datasets
-> Spanning Globally Critical Food Species.*
+> Mutuvi S., Guerena D., Zych M., Henday S., Agesa B., Ghandi H., et al.
+> *Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical
+> Food Species.*
 
 When accessing data through AWS, also cite the registry entry:
 
