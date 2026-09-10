@@ -147,9 +147,14 @@ Artemis and Image Safari collection.
 
 Cite the data descriptor paper:
 
-> Mutuvi S., Guerena D., Zych M., Henday S., Agesa B., Ghandi H., et al.
-> *Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical
-> Food Species.*
+> Mutuvi S., Guerena D., Zych M., Henday S., Girma E., Mungubariki T., Agesa B.,
+> Zochowski M., Ciolek D., Lazowik M., Chen J., Goeke L., Omwandho J., del Palma
+> G., Malabi J., Phomebeya S., Sanena M., Marcos J. T. C., Ghandi H., Nas M.,
+> Rathore A., Mendes T., Yadav S., Adjah K. L., Woltering L., Lekasio E., Mushi
+> B., Abraham L., Katunzi G., Remy S. L., Siyavora T., Selvaraj M., Casas J.,
+> Boukar O., Ongom P., Nakato G. V., Mwanje G., Agre P., Laporte M.-A., Asefa
+> T., Odama R., Mukankusi C., and Wu W. *Artemis and Image Safari - Crop Imagery
+> Datasets Spanning Globally Critical Food Species.*
 
 When accessing data through AWS, also cite the registry entry:
 

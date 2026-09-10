@@ -47,7 +47,7 @@ License: >
 Citation: >
   Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical
   Food Species was accessed on [DATE] at registry.opendata.aws/artemis-image-safari.
-  Please also cite the associated data descriptor (Mutuvi S. et al.).
+  Please also cite the associated data descriptor (Mutuvi S., Guerena D., Zych M., et al.).
 
 Resources:
   - Description: >
@@ -93,7 +93,7 @@ DataAtWork:
   Publications:
     - Title: >
         Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Food Species
-      AuthorName: "Mutuvi S., et al."
+      AuthorName: "Mutuvi S., Guerena D., Zych M., Henday S., Girma E., Mungubariki T., Agesa B., Zochowski M., Ciolek D., Lazowik M., Chen J., Goeke L., Omwandho J., del Palma G., Malabi J., Phomebeya S., Sanena M., Marcos J. T. C., Ghandi H., Nas M., Rathore A., Mendes T., Yadav S., Adjah K. L., Woltering L., Lekasio E., Mushi B., Abraham L., Katunzi G., Remy S. L., Siyavora T., Selvaraj M., Casas J., Boukar O., Ongom P., Nakato G. V., Mwanje G., Agre P., Laporte M.-A., Asefa T., Odama R., Mukankusi C., and Wu W."
 
 ADXCategories:
   - Environmental Data

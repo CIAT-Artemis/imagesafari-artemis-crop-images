@@ -316,9 +316,15 @@ The dataset is released under the
 
 ## Citation
 
-> Mutuvi S., Guerena D., Zych M., Henday S., Agesa B., Ghandi H., et al.
-> (2026). *Artemis and Image Safari - Crop Imagery Datasets Spanning Globally
-> Critical Food Species*. Registry of Open Data on AWS.
+> Mutuvi S., Guerena D., Zych M., Henday S., Girma E., Mungubariki T., Agesa B.,
+> Zochowski M., Ciolek D., Lazowik M., Chen J., Goeke L., Omwandho J., del Palma
+> G., Malabi J., Phomebeya S., Sanena M., Marcos J. T. C., Ghandi H., Nas M.,
+> Rathore A., Mendes T., Yadav S., Adjah K. L., Woltering L., Lekasio E., Mushi
+> B., Abraham L., Katunzi G., Remy S. L., Siyavora T., Selvaraj M., Casas J.,
+> Boukar O., Ongom P., Nakato G. V., Mwanje G., Agre P., Laporte M.-A., Asefa
+> T., Odama R., Mukankusi C., and Wu W. (2026). *Artemis and Image Safari - Crop
+> Imagery Datasets Spanning Globally Critical Food Species*. Registry of Open
+> Data on AWS.
 
 Also include the date on which the data were accessed and identify the release
 or S3 prefix used in the analysis.
