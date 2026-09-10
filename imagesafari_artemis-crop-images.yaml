@@ -1,4 +1,4 @@
-Name: Artemis and Image Safari Agricultural Imaging Dataset
+Name: Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Food Species
 Description: >
   Artemis and Image Safari are complementary large-scale agricultural imaging
   datasets containing approximately 7.5 million field images (7,469,218) from
@@ -45,9 +45,9 @@ License: >
   https://creativecommons.org/licenses/by-sa/4.0/
 
 Citation: >
-  Artemis and Image Safari Agricultural Imaging Dataset was accessed on [DATE] at
-  registry.opendata.aws/artemis-image-safari. Please also cite the associated data
-  descriptor: [PAPER_DOI_URL]
+  Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical
+  Food Species was accessed on [DATE] at registry.opendata.aws/artemis-image-safari.
+  Please also cite the associated data descriptor: [PAPER_DOI_URL]
 
 Resources:
   - Description: >
@@ -79,7 +79,7 @@ Resources:
 
 DataAtWork:
   Tutorials:
-    - Title: "Get To Know A Dataset: Artemis and Image Safari"
+    - Title: "Get To Know A Dataset: Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Food Species"
       URL: https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/blob/main/get-to-know-a-dataset-imagesafari_artemis.ipynb
       NotebookURL: https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/blob/main/get-to-know-a-dataset-imagesafari_artemis.ipynb
       AuthorName: "Alliance of Bioversity International and CIAT"

@@ -124,8 +124,9 @@ Released under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ## Citation
 
-> Alliance of Bioversity International and CIAT (2026). *ImageSafari_Artemis
-> Crop Image Collection*. Registry of Open Data on AWS.
+> Alliance of Bioversity International and CIAT (2026). *Artemis and Image
+> Safari - Crop Imagery Datasets Spanning Globally Critical Food Species*.
+> Registry of Open Data on AWS.
 
 ## Contact
 

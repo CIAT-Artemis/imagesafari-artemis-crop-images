@@ -1,10 +1,11 @@
-# ImageSafari_Artemis Crop Image Collection
+# Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Food Species
 
-This repository hosts the **ImageSafari_Artemis** dataset — also listed on the
-[Registry of Open Data on AWS](https://registry.opendata.aws/) as **Artemis and
-Image Safari Agricultural Imaging Dataset** — a unified agricultural image
-collection comprising **7,469,218 field images** across two complementary
-datasets, **Artemis** and **Image Safari**, developed by the
+This repository hosts **Artemis and Image Safari - Crop Imagery Datasets Spanning
+Globally Critical Food Species**, listed on the
+[Registry of Open Data on AWS](https://registry.opendata.aws/artemis-image-safari)
+— a unified agricultural image collection comprising **7,469,218 field images**
+across two complementary datasets, **Artemis** and **Image Safari**, developed by
+the
 [Alliance of Bioversity International and CIAT](https://alliancebioversityciat.org/).
 
 The collection spans **18 crop species** and **11 countries** across sub-Saharan
@@ -19,7 +20,7 @@ agricultural monitoring, and cross-environment generalisation research.
 |---|---:|---:|---:|---|
 | **Artemis** | 1,387,663 | 4 | 4 | Structured phenotyping with linked field metadata |
 | **Image Safari** | 6,081,555 | 18 | 9 | Diversity across crops, geographies, and imaging conditions |
-| **Combined** | **7,469,218** | **18** | **11** | Unified ImageSafari_Artemis collection |
+| **Combined** | **7,469,218** | **18** | **11** | Unified Artemis and Image Safari collection |
 
 ## Artemis
 
@@ -133,7 +134,7 @@ metadata is provided as JSON sidecar files.
 ## License
 
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) for the full
-ImageSafari_Artemis collection.
+Artemis and Image Safari collection.
 
 ## Documentation
 
@@ -152,11 +153,12 @@ Cite the data descriptor paper:
 
 When accessing data through AWS, also cite the registry entry:
 
-> Artemis and Image Safari Agricultural Imaging Dataset was accessed on [DATE]
-> at [registry.opendata.aws/artemis-image-safari](https://registry.opendata.aws/artemis-image-safari).
+> Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical
+> Food Species was accessed on [DATE] at
+> [registry.opendata.aws/artemis-image-safari](https://registry.opendata.aws/artemis-image-safari).
 
-Identify the ImageSafari_Artemis release version used, the S3 bucket prefix, and
-the date accessed. Machine-readable citation metadata is in [`CITATION.cff`](CITATION.cff).
+Identify the release version used, the S3 bucket prefix, and the date accessed.
+Machine-readable citation metadata is in [`CITATION.cff`](CITATION.cff).
 
 ## Contact
 
