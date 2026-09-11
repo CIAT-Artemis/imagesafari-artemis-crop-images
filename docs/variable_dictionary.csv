@@ -1,40 +1,45 @@
-field_name,type,description,dataset,required
-image_id,string,Stable image identifier (content hash); sidecar field id,both,no
-object_key,string,S3 object key for the image file,both,yes
-file_format,string,Image file extension; release images are JPEG,both,yes
-crop,string,"Crop species depicted in the image; sidecar: agronomic_properties.crop_type",both,yes
-site,string,"Collection site or research centre identifier; sidecar: location_properties.site",both,yes
-centre,string,Contributing research centre or station (may match or refine site),imagesafari,no
-country,string,"Country of collection (ISO-3166 alpha-3 when from sidecar admin_level_0)",both,yes
-year,integer,Year of capture,imagesafari,no
-season,string,"Growing season when available: fall, spring, summer, or winter; may be inferred from object key",imagesafari,no
-date_captured,date,"Image capture date in YYYY-MM-DD form; sidecar: acquisition_properties.date",both,yes
-capture_time,string,"Local capture time in HH:MM:SS when available; sidecar: acquisition_properties.time",imagesafari,no
-latitude,float,"GPS latitude in decimal degrees; sidecar: location_properties.latitude",both,no
-longitude,float,"GPS longitude in decimal degrees; sidecar: location_properties.longitude",both,no
-elevation_m,float,"Elevation in metres when available; sidecar: location_properties.elevation_m",both,no
-crs,string,"Coordinate reference system; sidecar: location_properties.crs (e.g. EPSG:4326)",both,no
-growth_stage,string,"Phenological growth stage at time of capture; sidecar: agronomic_properties.growth_stage",both,yes
-plot_id,string,"Plot identifier linking imagery to field records; required for Artemis trials; sidecar: location_properties.plot_id",both,no
-variety_id,string,Variety or genotype identifier,artemis,no
-treatment,string,Applied treatment or management factor,artemis,no
-capture_platform,string,"Acquisition platform: push-cart, handheld, GoPro, or smartphone",both,no
-device,string,"Capture device class when available (e.g. mobile); sidecar: device",imagesafari,no
-capture_method,string,"Image-acquisition approach or device class (e.g. phone_approach); may be derived from object key",imagesafari,no
-viewpoint,string,"Camera viewpoint: top-down, above-canopy, or under-canopy",artemis,no
-capture_angle,string,Camera angle relative to the horizontal when recorded as a single summary value,imagesafari,no
-azimuth,float,"Camera azimuth in degrees; sidecar: acquisition_properties.azimuth",imagesafari,no
-pitch,float,"Camera pitch in degrees; sidecar: acquisition_properties.pitch",imagesafari,no
-roll,float,"Camera roll in degrees; sidecar: acquisition_properties.roll",imagesafari,no
-light_source,string,"Illumination source; sidecar: acquisition_properties.light_source (e.g. natural)",imagesafari,no
-camera_make,string,"Camera manufacturer; sidecar: camera_properties.make",both,no
-camera_model,string,"Camera model; sidecar: camera_properties.model",both,no
-image_height,integer,"Image height in pixels; sidecar: image_quality.height",both,no
-image_width,integer,"Image width in pixels; sidecar: image_quality.width",both,no
-orientation,string,"Image orientation: portrait or landscape; sidecar: image_quality.orientation",both,no
-annotation_track,string,"Image Safari annotation track; published annotations use standard",imagesafari,no
-annotation_type,string,"Annotation representation: instance_segmentation, object_detection, semantic_segmentation, point, or scribble",both,no
-groundtruth_level,string,Granularity at which the ground-truth observation was recorded; image-linked means the value applies to the individual image,artemis,no
-groundtruth_trait,string,"Measured trait: pod_count, open_flower_count, open_flower_presence, plant_stand, disease_score, disease_presence, cbb, or als",artemis,no
-groundtruth_value,string,Recorded value for groundtruth_trait; a number for count or score traits or YES/NO for presence traits,artemis,no
-has_groundtruth,string,TRUE or FALSE indicating presence of ground truth,artemis,no
+field_name,type,description,dataset,required,provenance,json_field_path
+crop,string,Crop species depicted in the image,both,yes,mixed,agronomic_properties.crop_type
+site,string,Collection site or research centre identifier,both,yes,mixed,location_properties.site
+country,string,Country of collection (ISO-3166 alpha-3),both,yes,mixed,location_properties.admin_level_0
+date_captured,date,Image capture date in YYYY-MM-DD form,both,yes,mixed,acquisition_properties.date
+latitude,float,GPS latitude in decimal degrees,both,no,recorded,location_properties.latitude
+longitude,float,GPS longitude in decimal degrees,both,no,recorded,location_properties.longitude
+growth_stage,string,"Phenological growth stage at time of capture. Artemis uses a controlled vocabulary (emergence, vegetative, flowering, podding, grain_filling, maturity); Image Safari records crop-specific stages",both,no,mixed,agronomic_properties.growth_stage
+plot_id,string,Plot identifier linking imagery to field records,both,no,mixed,location_properties.plot_id
+object_key,string,S3 object key for the image file. Format: Project/crop/images/site/trial/year--countrycode--trialstartmonth/acquisition-date/plot/filename,artemis,yes,derived,
+capture_platform,string,Acquisition platform: push-cart or handheld,artemis,no,derived,
+viewpoint,string,"Camera viewpoint and scope, e.g. top-down whole-plot, above-canopy single-plant, under-canopy single-plant",artemis,no,derived,
+variety_id,string,Variety or genotype identifier,artemis,no,recorded,
+treatment,string,Applied treatment or management factor,artemis,no,recorded,
+groundtruth_level,string,Granularity at which the ground-truth observation was recorded; image-linked means the value applies to the individual image,artemis,no,recorded,
+groundtruth_trait,string,"Measured trait: pod_count, open_flower_count, open_flower_presence, plant_stand, disease_score, disease_presence, cbb, or als",artemis,no,mixed,
+groundtruth_value,string,Recorded value for groundtruth_trait; a number for count or score traits or YES/NO for presence traits,artemis,no,recorded,
+has_groundtruth,boolean,TRUE when the image carries both a trait and a value; FALSE when no ground truth was recorded,artemis,no,derived,
+image_path,string,Path to the image in the source data store,imagesafari,no,recorded,path
+image_id,string,Unique identifier of the image (content hash),imagesafari,no,recorded,id
+device,string,"Type of device collecting the image: mobile, auxiliary, or drone",imagesafari,no,recorded,device
+image_type,string,"Type of image: original, annotation, augmented, or synthetic",imagesafari,no,recorded,type
+protocol_name,string,Name of the protocol used to capture the image,imagesafari,no,recorded,protocol_properties.name
+camera_make,string,Make (manufacturer) of the camera,imagesafari,no,recorded,camera_properties.make
+camera_model,string,Model of the camera,imagesafari,no,recorded,camera_properties.model
+crs,string,Coordinate reference system of the GPS data (e.g. EPSG:4326),imagesafari,no,recorded,location_properties.crs
+capture_time,time,Time the image was taken,imagesafari,no,recorded,acquisition_properties.time
+azimuth,float,Camera azimuth in degrees (-180 to 180),imagesafari,no,recorded,acquisition_properties.azimuth
+pitch,float,Camera pitch in degrees (-180 to 180),imagesafari,no,recorded,acquisition_properties.pitch
+roll,float,Camera roll in degrees (-180 to 180),imagesafari,no,recorded,acquisition_properties.roll
+light_source,string,Light source used to collect the image,imagesafari,no,recorded,acquisition_properties.light_source
+exposure,float,Amount the image was exposed (1-100),imagesafari,no,recorded,image_quality.exposure
+image_height,float,Height of the image in pixels,imagesafari,no,recorded,image_quality.height
+image_width,float,Width of the image in pixels,imagesafari,no,recorded,image_quality.width
+orientation,string,Orientation of the image: portrait or landscape,imagesafari,no,recorded,image_quality.orientation
+pct_pixel_over_saturation,float,Percentage of pixels that were over saturated (0-100),imagesafari,no,recorded,image_quality.pct_pixel_over_saturation
+pct_pixel_under_saturation,float,Percentage of pixels that were under saturated (0-100),imagesafari,no,recorded,image_quality.pct_pixel_under_saturation
+image_scope_pred,string,"Predicted resolution of the object in the image (e.g. single-plant, whole-plot). Model output, not a field observation",imagesafari,no,model,acquisition_properties.object_resolution_ml.pred
+image_scope_confidence,float,"Confidence of the object-resolution prediction (0-1). Model output, not a field observation",imagesafari,no,model,acquisition_properties.object_resolution_ml.confidence
+image_scope_model_id,string,ID of the model used to make the object-resolution prediction,imagesafari,no,model,acquisition_properties.object_resolution_ml.model_id
+image_scope_model_version,integer,Version of the model used to make the object-resolution prediction,imagesafari,no,model,acquisition_properties.object_resolution_ml.model_version
+blur_score_pred,string,"Model-predicted blur class on an intended scale of 1-4. Model output, not a field observation",imagesafari,no,model,image_quality.blur_score.pred
+blur_score_confidence,float,"Confidence of the blur prediction (0-1). Model output, not a field observation",imagesafari,no,model,image_quality.blur_score.confidence
+blur_score_model_id,string,ID of the model used to make the blur prediction,imagesafari,no,model,image_quality.blur_score.model_id
+blur_score_model_version,integer,Version of the model used to make the blur prediction,imagesafari,no,model,image_quality.blur_score.model_version
