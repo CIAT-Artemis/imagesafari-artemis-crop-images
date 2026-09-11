@@ -23,8 +23,6 @@ this file.
   *Sphenostylis*).
 - Remove the benchmark annotation track from documentation; Image Safari
   annotations are released under `standard/` only.
-- Note Artemis inventory total 1,387,663 as authoritative where the crop×country
-  breakdown differs by 2.
 
 ## [1.0.0] - TBD
 

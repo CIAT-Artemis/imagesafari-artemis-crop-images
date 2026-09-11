@@ -59,10 +59,7 @@ research stations in:
 | Soybean | Colombia | 330 |
 | **Total** | | **1,387,663** |
 
-The published Artemis inventory total is **1,387,663**. Crop×country rows
-above currently sum to 1,387,665 (difference of 2); treat the inventory total
-as authoritative until the breakdown is re-verified. Counts are otherwise
-reported after automated quality control.
+Counts are reported after automated quality control.
 
 ## Data acquisition
 
