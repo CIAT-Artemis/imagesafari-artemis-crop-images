@@ -16,6 +16,8 @@ groundtruth_level,string,Granularity at which the ground-truth observation was r
 groundtruth_trait,string,"Measured trait: pod_count, open_flower_count, open_flower_presence, plant_stand, disease_score, disease_presence, cbb, or als",artemis,no,mixed,
 groundtruth_value,string,Recorded value for groundtruth_trait; a number for count or score traits or YES/NO for presence traits,artemis,no,recorded,
 has_groundtruth,boolean,TRUE when the image carries both a trait and a value; FALSE when no ground truth was recorded,artemis,no,derived,
+annotation_track,string,"Annotation pipeline the record belongs to, encoded in the annotation path structure; the current release uses standard",both,no,recorded,
+annotation_type,string,"Annotation representation, encoded in the annotation path structure; for example instance_segmentation, object_detection, semantic_segmentation, point, or scribble",both,no,recorded,
 image_path,string,Path to the image in the source data store,imagesafari,no,recorded,path
 image_id,string,Unique identifier of the image (content hash),imagesafari,no,recorded,id
 device,string,"Type of device collecting the image: mobile, auxiliary, or drone",imagesafari,no,recorded,device
