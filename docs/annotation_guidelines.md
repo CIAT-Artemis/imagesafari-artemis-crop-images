@@ -8,9 +8,9 @@ the Artemis and Image Safari public release. Counts reflect the S3 inventory of
 
 | Collection | Annotated images | Annotation instances | Modality profile |
 |---|---:|---:|---|
-| Artemis | 16,382 | 289,405 | Instance segmentation, object detection |
+| Artemis | 14,250 | 256,309 | Instance segmentation, object detection |
 | Image Safari | 30,570 | 10,049,665 | Point, scribble, semantic / instance segmentation, object detection |
-| Combined | 46,952 | 10,339,070 | — |
+| Combined | 44,820 | 10,305,974 | — |
 
 ## Artemis
 
@@ -41,15 +41,14 @@ Artemis/<crop>/annotations/[<variety>/]<annotation_type>/<set>/
 | Crop | Sets | Images | Annotations |
 |---|---:|---:|---:|
 | Common bean | 4 | 5,392 | 119,107 |
-| Cowpea | 2 | 4,264 | 66,192 |
+| Cowpea | 1 | 2,132 | 33,096 |
 | Sorghum | 2 | 6,726 | 104,106 |
 | Soybean | 0 | 0 | 0 |
 
 Named sets include `bushbean_flower`, `bushbean_pod`, `bushbean_plant_stand`,
-`cowpea_plant_stand`, `plant_stand_object_detection`, and `sorghum_plant_stand`.
-
-**Inventory caveat:** one cowpea object-detection set reports missing linked
-image objects; validate image availability before training.
+`cowpea_plant_stand`, `plant_stand_object_detection` (sorghum), and
+`sorghum_plant_stand`. The incomplete cowpea `plant_stand_object_detection`
+set is retired from the published inventory.
 
 ## Image Safari
 

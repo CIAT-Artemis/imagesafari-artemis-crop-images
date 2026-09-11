@@ -14,8 +14,8 @@ The dataset is maintained by the
 | Attribute | Value |
 |---|---:|
 | Images | 1,387,663 |
-| Annotated images | 16,382 |
-| Annotation instances | 289,405 |
+| Annotated images | 14,250 |
+| Annotation instances | 256,309 |
 | Crops in image corpus | 4 |
 | Crops with published annotations | 3 |
 | Countries | 4 |
@@ -105,16 +105,16 @@ covers **instance segmentation** and **object detection** only.
 
 | Task | Annotated images | Annotation instances | Crops |
 |---|---:|---:|---|
-| Object detection | 14,693 | 258,323 | common bean, cowpea, sorghum |
+| Object detection | 12,561 | 225,227 | common bean, cowpea, sorghum |
 | Instance segmentation | 1,689 | 31,082 | common bean |
-| **Total** | **16,382** | **289,405** | **3** |
+| **Total** | **14,250** | **256,309** | **3** |
 
 ### Annotated images by crop and type
 
 | Crop | Instance segmentation | Object detection | Total |
 |---|---:|---:|---:|
 | Common bean | 1,689 | 3,703 | 5,392 |
-| Cowpea | 0 | 4,264 | 4,264 |
+| Cowpea | 0 | 2,132 | 2,132 |
 | Sorghum | 0 | 6,726 | 6,726 |
 | Soybean | 0 | 0 | 0 |
 
@@ -130,7 +130,6 @@ inventory.
 | Common bean | bush-bean | object_detection | bushbean_plant_stand | 1,686 | 40,212 |
 | Common bean | bush-bean | object_detection | bushbean_pod | 2,017 | 47,813 |
 | Cowpea | — | object_detection | cowpea_plant_stand | 2,132 | 33,096 |
-| Cowpea | — | object_detection | plant_stand_object_detection | 2,132 | 33,096 |
 | Sorghum | — | object_detection | plant_stand_object_detection | 3,363 | 55,020 |
 | Sorghum | — | object_detection | sorghum_plant_stand | 3,363 | 49,086 |
 
@@ -138,9 +137,9 @@ Example classes include `plant_bean`, `flower_open`, `flower_closed`, `pod`,
 `fruit_pod`, `cowpea_plant`, weed classes, and `sorghum`. See
 [`annotation_guidelines.md`](annotation_guidelines.md).
 
-**Known inventory note:** one cowpea object-detection set reports missing linked
-image objects in the 2026-09-11 bucket inventory; users should validate image
-availability for that set before training.
+The incomplete cowpea set `plant_stand_object_detection` (COCO present, linked
+images missing in the 2026-09-11 inventory) is retired from the published
+documentation; use `cowpea_plant_stand` only.
 
 ## Public access
 

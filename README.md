@@ -51,7 +51,7 @@ Multiple imaging devices and field conditions are represented, with particular
 emphasis on smallholder farming systems common in the Global South that remain
 substantially underrepresented in existing public datasets.
 
-A subset of **46,952 annotated images** (16,382 Artemis; 30,570 Image Safari)
+A subset of **44,820 annotated images** (14,250 Artemis; 30,570 Image Safari)
 includes organ-level labels organized by annotation task. Artemis provides
 **instance segmentation** and **object detection** across three crops (common
 bean, cowpea, and sorghum). Image Safari annotations are released under a
@@ -106,7 +106,7 @@ alliance-artemis-imagesafari/
 ```
 
 **Artemis** annotations cover instance segmentation and object detection
-(16,382 annotated images; 289,405 annotation instances across eight published
+(14,250 annotated images; 256,309 annotation instances across seven published
 sets). Soybean imagery is included in the corpus but has no published
 annotation sets in the current inventory. **Image Safari** annotations cover
 point, semantic segmentation, scribble, object detection, and instance

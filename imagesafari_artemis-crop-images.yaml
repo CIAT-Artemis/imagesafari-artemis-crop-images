@@ -7,8 +7,8 @@ Description: >
   Artemis (1,387,663 images) pairs imagery with linked agronomic, genotypic,
   and environmental metadata across four crops and four countries. Image
   Safari (6,081,555 images) captures diversity across 18 crops and nine
-  countries. A subset of 46,952 images includes organ-level annotations
-  (16,382 Artemis; 30,570 Image Safari). Artemis annotations cover instance
+  countries. A subset of 44,820 images includes organ-level annotations
+  (14,250 Artemis; 30,570 Image Safari). Artemis annotations cover instance
   segmentation and object detection for common bean, cowpea, and sorghum
   (soybean has imagery only). Image Safari annotations cover point, semantic
   segmentation, scribble, object detection, and instance segmentation for 16 of
