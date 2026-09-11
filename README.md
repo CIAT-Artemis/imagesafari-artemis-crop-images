@@ -118,7 +118,10 @@ Images are stored as JPEG files at original acquisition resolution. Segmentation
 outputs are provided as PNG masks with matching filenames. Object-level
 annotations are stored in COCO JSON format. **Artemis** metadata is provided as
 Parquet and CSV files under each crop's `metadata/` subtree. **Image Safari**
-metadata is provided as JSON sidecar files.
+metadata is provided as JSON sidecar files. Sidecars include model-generated fields
+and these fields are identified by `provenance = model` in the variable dictionary.
+Approximately 11% of Image Safari images do not have an accompanying metadata sidecar
+but are valid images. 
 
 ## Repository contents
 
