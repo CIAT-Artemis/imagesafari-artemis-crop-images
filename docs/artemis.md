@@ -116,9 +116,8 @@ covers **instance segmentation** and **object detection** only.
 | Common bean | 1,689 | 3,703 | 5,392 |
 | Cowpea | 0 | 2,132 | 2,132 |
 | Sorghum | 0 | 6,726 | 6,726 |
-| Soybean | 0 | 0 | 0 |
 
-Soybean has published imagery and metadata but no annotation sets in this
+Soybean has published imagery and metadata but no annotations in this
 inventory.
 
 ### Published annotation sets

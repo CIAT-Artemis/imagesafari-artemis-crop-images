@@ -240,8 +240,8 @@ annotated crops after treating those prefixes as one crop (African yam).
 | African yam | 1,094 | point (`african-yam/` and `yam/` as one crop) |
 | Soybean | 1,063 | point |
 | Pearl millet | 494 | scribble, semantic segmentation |
-| Finger millet | 0 | — |
-| Lentil | 0 | — |
+
+Finger millet and lentil have imagery but no annotations in this inventory.
 
 Named sets include labels such as `plant-part`, `plant-semantic`,
 `pseudo-instance`, `plant_points`, and crop-specific task sets (for example

@@ -43,7 +43,8 @@ Artemis/<crop>/annotations/[<variety>/]<annotation_type>/<set>/
 | Common bean | 4 | 5,392 | 119,107 |
 | Cowpea | 1 | 2,132 | 33,096 |
 | Sorghum | 2 | 6,726 | 104,106 |
-| Soybean | 0 | 0 | 0 |
+
+Soybean has imagery but no annotations in this inventory.
 
 Named sets include `bushbean_flower`, `bushbean_pod`, `bushbean_plant_stand`,
 `cowpea_plant_stand`, `plant_stand_object_detection` (sorghum), and
