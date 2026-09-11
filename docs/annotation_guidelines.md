@@ -64,7 +64,8 @@ ImageSafari/<crop>/annotations/standard/<annotation_type>/<set>/
   `pseudo-instance`, `plant_points`).
 - Finger millet and lentil have imagery but no published annotation sets in
   this inventory.
-- S3 prefix `yam/` is treated as the same crop as African yam (`african-yam/`).
+- African yam is *Dioscorea* spp.; S3 prefix `yam/` is an alternate path for
+  the same crop as `african-yam/`, not a separate species.
 - Object detection is currently concentrated on **common bean**.
 
 ### Modality definitions

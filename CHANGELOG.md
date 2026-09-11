@@ -17,7 +17,10 @@ this file.
   annotated images (16,382 Artemis; 30,570 Image Safari); Artemis nested
   variety/task/set layout for instance segmentation and object detection only;
   Image Safari `standard/<modality>/<set>/` coverage for 16 of 18 crops
-  (finger millet and lentil imagery only; `yam/` treated as African yam).
+  (finger millet and lentil imagery only; African yam = Dioscorea; `yam/`
+  alternate prefix for `african-yam/`).
+- Align African yam taxonomy with the data paper (*Dioscorea* spp., not
+  *Sphenostylis*).
 - Remove the benchmark annotation track from documentation; Image Safari
   annotations are released under `standard/` only.
 - Note Artemis inventory total 1,387,663 as authoritative where the crop×country

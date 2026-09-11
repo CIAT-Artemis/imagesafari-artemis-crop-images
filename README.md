@@ -43,7 +43,7 @@ hypogaea*), lentil (*Lens culinaris*), maize (*Zea mays*), pearl millet
 (*Cenchrus americanus*), pigeon pea (*Cajanus cajan*), potato (*Solanum
 tuberosum*), rice (*Oryza sativa*), sorghum (*S. bicolor*), soybean (*Glycine
 max*), sweet potato (*Ipomoea batatas*), wheat (*Triticum aestivum*), and
-African yam (*Sphenostylis stenocarpa*) — across nine countries: Tanzania,
+African yam (*Dioscorea* spp.) — across nine countries: Tanzania,
 Côte d'Ivoire, Madagascar, Nigeria, Senegal, Kenya, Ghana, Uganda, and Malawi.
 The published collection contains **6,081,555 cleaned images** selected from a
 working corpus of 7,352,184 images, contributed by **15 research centres**.
@@ -113,8 +113,9 @@ point, semantic segmentation, scribble, object detection, and instance
 segmentation (30,570 annotated images; about 10.05 million annotation
 instances across 68 published sets). Finger millet and lentil are present in
 the image corpus but have no published annotation sets in the current
-inventory. African yam documentation treats S3 prefixes `african-yam/` and
-`yam/` as the same crop.
+inventory. African yam (*Dioscorea* spp.) is documented as a single crop;
+S3 prefixes `african-yam/` and `yam/` are treated as alternate paths for that
+crop.
 
 Images are stored as JPEG files at original acquisition resolution. Segmentation
 outputs are provided as PNG masks with matching filenames. Object-level
