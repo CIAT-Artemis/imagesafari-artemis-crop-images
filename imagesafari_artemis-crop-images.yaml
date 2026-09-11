@@ -53,8 +53,10 @@ Resources:
   - Description: >
       Artemis structured phenotyping images (1,387,663 images, four crops:
       common bean, cowpea, soybean, sorghum) with linked agronomic, genotypic,
-      and environmental metadata. Field images (JPEG, original acquisition
-      resolution) and annotations organised by crop under nested paths such as
+      and environmental metadata. Annotations are published for common bean,
+      cowpea, and sorghum; soybean has imagery only. Field images (JPEG,
+      original acquisition resolution) and annotations organised by crop under
+      nested paths such as
       annotations/[<variety>/]instance_segmentation/<set>/ and
       annotations/[<variety>/]object_detection/<set>/ (COCO JSON and related
       formats). Parquet and CSV metadata files under each crop directory's

@@ -22,6 +22,9 @@ The dataset is maintained by the
 | Image format | JPEG |
 | License | CC BY-SA 4.0 |
 
+Soybean is included in the image corpus; published annotations cover common
+bean, cowpea, and sorghum only.
+
 ## Crops
 
 | Crop | Scientific name |
@@ -114,6 +117,9 @@ covers **instance segmentation** and **object detection** only.
 | Cowpea | 0 | 4,264 | 4,264 |
 | Sorghum | 0 | 6,726 | 6,726 |
 | Soybean | 0 | 0 | 0 |
+
+Soybean has published imagery and metadata but no annotation sets in this
+inventory.
 
 ### Published annotation sets
 
