@@ -32,7 +32,7 @@ camera_model,string,"Camera model; sidecar: camera_properties.model",both,no
 image_height,integer,"Image height in pixels; sidecar: image_quality.height",both,no
 image_width,integer,"Image width in pixels; sidecar: image_quality.width",both,no
 orientation,string,"Image orientation: portrait or landscape; sidecar: image_quality.orientation",both,no
-annotation_track,string,"standard or benchmark",both,no
+annotation_track,string,"Image Safari annotation track; published annotations use standard",imagesafari,no
 annotation_type,string,"Annotation representation: instance_segmentation, object_detection, semantic_segmentation, point, or scribble",both,no
 groundtruth_level,string,Granularity at which the ground-truth observation was recorded; image-linked means the value applies to the individual image,artemis,no
 groundtruth_trait,string,"Measured trait: pod_count, open_flower_count, open_flower_presence, plant_stand, disease_score, disease_presence, cbb, or als",artemis,no
