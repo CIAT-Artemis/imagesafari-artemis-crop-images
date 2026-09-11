@@ -152,16 +152,10 @@ Artemis and Image Safari collection.
 
 ## Citation
 
-Cite the data descriptor paper:
+Cite the data descriptor:
 
-> Mutuvi S., Guerena D., Zych M., Henday S., Girma E., Mungubariki T., Agesa B.,
-> Zochowski M., Ciolek D., Lazowik M., Chen J., Goeke L., Omwandho J., del Palma
-> G., Malabi J., Phomebeya S., Sanena M., Marcos J. T. C., Ghandi H., Nas M.,
-> Rathore A., Mendes T., Yadav S., Adjah K. L., Woltering L., Lekasio E., Mushi
-> B., Abraham L., Katunzi G., Remy S. L., Siyavora T., Selvaraj M., Casas J.,
-> Boukar O., Ongom P., Nakato G. V., Mwanje G., Agre P., Laporte M.-A., Asefa
-> T., Odama R., Mukankusi C., and Wu W. *Artemis and Image Safari - Crop Imagery
-> Datasets Spanning Globally Critical Food Species.*
+> Mutuvi S. et al. (2026). *Artemis and Image Safari - Crop Imagery Datasets
+> Spanning Globally Critical Food Species.*
 
 When accessing data through AWS, also cite the registry entry:
 
@@ -170,7 +164,7 @@ When accessing data through AWS, also cite the registry entry:
 > [registry.opendata.aws/artemis-image-safari](https://registry.opendata.aws/artemis-image-safari).
 
 Identify the release version used, the S3 bucket prefix, and the date accessed.
-Machine-readable citation metadata is in [`CITATION.cff`](CITATION.cff).
+The full author list is in [`CITATION.cff`](CITATION.cff).
 
 ## Contact
 
