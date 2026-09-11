@@ -1,10 +1,25 @@
-field,check,records_checked,errors_found,errors_corrected,notes
-crop,allowed_values,7469218,0,0,Validated against crop ontology
-site,non_null,7469218,124,124,Missing site codes imputed from centre logs
-date_captured,format_YYYY-MM-DD,7469218,38,38,Corrected from ODK timestamps
-latitude,range_and_non_null,7469218,412,389,Out-of-range coordinates flagged and corrected where possible
-longitude,range_and_non_null,7469218,412,389,Out-of-range coordinates flagged and corrected where possible
-growth_stage,allowed_values,7469218,56,56,Aligned to crop-specific staging scales
-plot_id,non_null_artemis,1387663,0,0,Artemis plots require plot identifiers
-annotation_track,allowed_values,44820,0,0,standard only (Image Safari)
-annotation_type,allowed_values,44820,0,0,"Five types: instance_segmentation, object_detection, semantic_segmentation, point, scribble"
+field,check,dataset,records_checked,records_affected,notes
+crop,allowed_values,artemis,1387663,0,Validated against the release crop vocabulary
+site,allowed_values,artemis,1387663,0,Validated against the official site list
+country,allowed_values,artemis,1387663,0,ISO-3166 alpha-3
+date_captured,format_YYYY-MM-DD,artemis,1387663,0,Parsed from acquisition folders
+latitude,completeness,artemis,1387663,1387663,Not recorded in the Artemis release
+longitude,completeness,artemis,1387663,1387663,Not recorded in the Artemis release
+growth_stage,completeness,artemis,1387663,362375,Not recorded for part of the corpus
+growth_stage,allowed_values,artemis,1025288,0,Controlled six-term vocabulary
+plot_id,completeness,artemis,1387663,66,Scouting images are recorded without a plot identifier
+object_key,uniqueness,artemis,1387663,0,Object keys must be unique
+groundtruth_trait,completeness,artemis,111469,0,Every ground-truth value carries a trait label
+metadata_sidecar,presence,imagesafari,6081555,662724,Images without an accompanying metadata sidecar
+metadata_sidecar,orphan_records,imagesafari,5418831,0,Sidecars with no corresponding published image
+crop,allowed_values,imagesafari,5418831,0,Validated against the crop vocabulary
+country,allowed_values,imagesafari,5418831,0,ISO-3166 alpha-3
+site,allowed_values,imagesafari,5418831,51577,Spelling variants of valid sites are reported as failures
+date_captured,format_YYYY-MM-DD,imagesafari,5418831,0,Recorded at capture
+latitude,completeness,imagesafari,5418831,14043,Missing for a small share of sidecars
+latitude,range,imagesafari,5404788,0,Decimal degrees within valid bounds
+longitude,completeness,imagesafari,5418831,14043,Missing for a small share of sidecars
+longitude,range,imagesafari,5404788,0,Decimal degrees within valid bounds
+growth_stage,completeness,imagesafari,5418831,66343,Not recorded for part of the corpus
+growth_stage,vocabulary,imagesafari,5352488,0,25 crop-specific stages recorded
+plot_id,completeness,imagesafari,5418831,421894,Not recorded for part of the corpus
