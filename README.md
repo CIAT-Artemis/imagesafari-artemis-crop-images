@@ -55,9 +55,10 @@ A subset of **46,952 annotated images** (16,382 Artemis; 30,570 Image Safari)
 includes organ-level labels organized by annotation task. Artemis provides
 **instance segmentation** and **object detection** across three crops (common
 bean, cowpea, and sorghum). Image Safari annotations are released under a
-**standard** track for **17 of 18** crops and include **point**, **semantic
+**standard** track for **16 of 18** crops and include **point**, **semantic
 segmentation**, **scribble**, **object detection**, and **instance
-segmentation** (object detection currently for common bean only).
+segmentation** (object detection currently for common bean only). Finger millet
+and lentil have imagery but no published annotation sets.
 
 ## Public access
 
@@ -110,8 +111,10 @@ sets). Soybean imagery is included in the corpus but has no published
 annotation sets in the current inventory. **Image Safari** annotations cover
 point, semantic segmentation, scribble, object detection, and instance
 segmentation (30,570 annotated images; about 10.05 million annotation
-instances across 68 published sets). Finger millet is present in the image
-corpus but has no published annotation sets in the current inventory.
+instances across 68 published sets). Finger millet and lentil are present in
+the image corpus but have no published annotation sets in the current
+inventory. African yam documentation treats S3 prefixes `african-yam/` and
+`yam/` as the same crop.
 
 Images are stored as JPEG files at original acquisition resolution. Segmentation
 outputs are provided as PNG masks with matching filenames. Object-level

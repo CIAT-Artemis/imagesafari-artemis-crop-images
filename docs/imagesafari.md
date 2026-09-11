@@ -17,7 +17,7 @@ The corpus is maintained by the
 | Annotated images | 30,570 |
 | Annotation instances | 10,049,665 |
 | Crops in image corpus | 18 |
-| Crops with published annotations | 17 |
+| Crops with published annotations | 16 |
 | Annotation sets published | 68 |
 | Countries | 9 |
 | Contributing research centres | 15 |
@@ -201,8 +201,10 @@ files associated with each image.
 
 Image Safari annotations are released under a **standard** track and organized
 by modality and named set. The current public inventory (2026-09-11) covers
-**17 of 18** crops (finger millet has imagery but no published annotation sets)
-and **68** annotation sets.
+**16 of 18** crops. **Finger millet** and **lentil** have imagery but no
+published annotation sets. S3 also exposes a `yam/` annotation prefix; it is
+treated as the same crop as **African yam** (`african-yam/`) in this
+documentation (the `yam/` point set matches the African yam point set).
 
 | Modality | Annotated images | Annotation instances | Crops with this type |
 |---|---:|---:|---:|
@@ -211,7 +213,11 @@ and **68** annotation sets.
 | Semantic segmentation | 6,541 | 1,619,166 | 16 |
 | Instance segmentation | 2,331 | 1,246,563 | 8 |
 | Object detection | 2,419 | 45,630 | 1 (common bean) |
-| **Total (unique images)** | **30,570** | **10,049,665** | **17** |
+| **Inventory total** | **30,570** | **10,049,665** | **16** |
+
+Inventory totals follow the 2026-09-11 S3 report (which counted `yam/` and
+`african-yam/` as separate prefixes). Documented crop coverage uses 16
+annotated crops after treating those prefixes as one crop.
 
 ### Annotated images by crop
 
@@ -230,11 +236,11 @@ and **68** annotation sets.
 | Wheat | 1,193 | point, instance segmentation |
 | Banana | 1,190 | point |
 | Chickpea | 1,158 | point |
-| African yam | 1,094 | point |
+| African yam | 1,094 | point (S3 `african-yam/` and `yam/` treated as one crop) |
 | Soybean | 1,063 | point |
-| Yam | 899 | point |
 | Pearl millet | 494 | scribble, semantic segmentation |
 | Finger millet | 0 | — |
+| Lentil | 0 | — |
 
 Named sets include labels such as `plant-part`, `plant-semantic`,
 `pseudo-instance`, `plant_points`, and crop-specific task sets (for example

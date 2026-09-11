@@ -99,8 +99,8 @@ abstract: >
   structured phenotyping collection across four crops and four countries;
   published Artemis annotations cover three crops (soybean has imagery only).
   Image Safari (6,081,555 images) is a diversity-driven corpus across 18 crops
-  and nine countries (finger millet has imagery only among annotation gaps). A
-  subset of 46,952 images includes organ-level annotations.
+  and nine countries (finger millet and lentil have imagery only among
+  annotation gaps). A subset of 46,952 images includes organ-level annotations.
 keywords:
   - agriculture
   - computer vision

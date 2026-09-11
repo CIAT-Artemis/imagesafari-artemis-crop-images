@@ -62,7 +62,9 @@ ImageSafari/<crop>/annotations/standard/<annotation_type>/<set>/
 - All published Image Safari annotations sit under the **`standard/`** track.
 - Sets are named directories (for example `plant-part`, `plant-semantic`,
   `pseudo-instance`, `plant_points`).
-- Finger millet has imagery but no published annotation sets in this inventory.
+- Finger millet and lentil have imagery but no published annotation sets in
+  this inventory.
+- S3 prefix `yam/` is treated as the same crop as African yam (`african-yam/`).
 - Object detection is currently concentrated on **common bean**.
 
 ### Modality definitions

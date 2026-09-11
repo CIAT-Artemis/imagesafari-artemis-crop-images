@@ -11,10 +11,10 @@ Description: >
   (16,382 Artemis; 30,570 Image Safari). Artemis annotations cover instance
   segmentation and object detection for common bean, cowpea, and sorghum
   (soybean has imagery only). Image Safari annotations cover point, semantic
-  segmentation, scribble, object detection, and instance segmentation for 17 of
-  18 crops (finger millet has imagery only). The datasets combine crop imagery,
-  structured metadata, and annotations to support agricultural foundation
-  models, plant disease detection, growth stage recognition, and
+  segmentation, scribble, object detection, and instance segmentation for 16 of
+  18 crops (finger millet and lentil have imagery only). The datasets combine
+  crop imagery, structured metadata, and annotations to support agricultural
+  foundation models, plant disease detection, growth stage recognition, and
   cross-environment generalisation research.
 
 Documentation: https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/blob/main/README.md
@@ -71,8 +71,10 @@ Resources:
   - Description: >
       Image Safari diversity-driven crop images (6,081,555 images, 18 crops)
       across nine countries in sub-Saharan Africa. Annotations are published for
-      17 of 18 crops; finger millet has imagery only. Field images (JPEG,
-      original acquisition resolution) and annotations organised by crop under
+      16 of 18 crops; finger millet and lentil have imagery only. African yam
+      documentation treats S3 prefixes african-yam/ and yam/ as the same crop.
+      Field images (JPEG, original acquisition resolution) and annotations
+      organised by crop under
       annotations for point, semantic_segmentation, scribble, object_detection,
       and instance_segmentation under annotations/standard/<modality>/<set>/
       (COCO JSON, PNG masks, and related formats). Per-image metadata is
