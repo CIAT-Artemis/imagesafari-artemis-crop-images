@@ -22,8 +22,7 @@ this file.
 - Remove the benchmark annotation track from documentation; Image Safari
   annotations are released under `standard/` only.
 - Document Image Safari `standard/<modality>/<set>/` coverage for 16 of 18
-  crops (finger millet and lentil imagery only; African yam = Dioscorea;
-  `yam/` alternate prefix for `african-yam/`).
+  crops (finger millet and lentil have imagery but no annotations).
 
 ## [1.0.0] - TBD
 

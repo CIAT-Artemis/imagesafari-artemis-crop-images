@@ -112,10 +112,7 @@ annotation sets in the current inventory. **Image Safari** annotations cover
 point, semantic segmentation, scribble, object detection, and instance
 segmentation (30,570 annotated images; about 10.05 million annotation
 instances across 68 published sets). Finger millet and lentil are present in
-the image corpus but have no published annotation sets in the current
-inventory. African yam (*Dioscorea* spp.) is documented as a single crop;
-S3 prefixes `african-yam/` and `yam/` are treated as alternate paths for that
-crop.
+the image corpus but have no annotations in the current inventory.
 
 Images are stored as JPEG files at original acquisition resolution. Segmentation
 outputs are provided as PNG masks with matching filenames. Object-level

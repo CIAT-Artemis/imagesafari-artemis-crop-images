@@ -71,15 +71,12 @@ Resources:
   - Description: >
       Image Safari diversity-driven crop images (6,081,555 images, 18 crops)
       across nine countries in sub-Saharan Africa. Annotations are published for
-      16 of 18 crops; finger millet and lentil have imagery only. African yam
-      (Dioscorea spp.) treats S3 prefixes african-yam/ and yam/ as alternate
-      paths for the same crop.
-      Field images (JPEG, original acquisition resolution) and annotations
-      organised by crop under
-      annotations for point, semantic_segmentation, scribble, object_detection,
-      and instance_segmentation under annotations/standard/<modality>/<set>/
-      (COCO JSON, PNG masks, and related formats). Per-image metadata is
-      provided as JSON sidecar files.
+      16 of 18 crops; finger millet and lentil have imagery only. Field images
+      (JPEG, original acquisition resolution) and annotations organised by crop
+      under annotations for point, semantic_segmentation, scribble,
+      object_detection, and instance_segmentation under
+      annotations/standard/<modality>/<set>/ (COCO JSON, PNG masks, and related
+      formats). Per-image metadata is provided as JSON sidecar files.
     ARN: arn:aws:s3:::alliance-artemis-imagesafari/ImageSafari
     Region: us-west-2
     Type: S3 Bucket

@@ -202,10 +202,7 @@ files associated with each image.
 Image Safari annotations are released under a **standard** track and organized
 by modality and named set. The current public inventory (2026-09-11) covers
 **16 of 18** crops. **Finger millet** and **lentil** have imagery but no
-published annotation sets. African yam is *Dioscorea* spp. S3 also exposes a
-`yam/` annotation prefix; it is treated as an alternate path for the same
-African yam crop (`african-yam/`), not a nineteenth species (the `yam/` point
-set matches the African yam point set).
+annotations.
 
 | Modality | Annotated images | Annotation instances | Crops with this type |
 |---|---:|---:|---:|
@@ -214,11 +211,7 @@ set matches the African yam point set).
 | Semantic segmentation | 6,541 | 1,619,166 | 16 |
 | Instance segmentation | 2,331 | 1,246,563 | 8 |
 | Object detection | 2,419 | 45,630 | 1 (common bean) |
-| **Inventory total** | **30,570** | **10,049,665** | **16** |
-
-Inventory totals follow the 2026-09-11 S3 report (which counted `yam/` and
-`african-yam/` as separate prefixes). Documented crop coverage uses 16
-annotated crops after treating those prefixes as one crop (African yam).
+| **Total** | **30,570** | **10,049,665** | **16** |
 
 ### Annotated images by crop
 
@@ -237,7 +230,7 @@ annotated crops after treating those prefixes as one crop (African yam).
 | Wheat | 1,193 | point, instance segmentation |
 | Banana | 1,190 | point |
 | Chickpea | 1,158 | point |
-| African yam | 1,094 | point (`african-yam/` and `yam/` as one crop) |
+| African yam | 1,094 | point |
 | Soybean | 1,063 | point |
 | Pearl millet | 494 | scribble, semantic segmentation |
 
