@@ -1,7 +1,7 @@
-# Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Food Species
+# Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Crop Species
 
 This repository hosts **Artemis and Image Safari - Crop Imagery Datasets Spanning
-Globally Critical Food Species**, listed on the
+Globally Critical Crop Species**, listed on the
 [Registry of Open Data on AWS](https://registry.opendata.aws/artemis-image-safari)
 — a unified agricultural image collection comprising **7,469,218 field images**
 across two complementary datasets, **Artemis** and **Image Safari**, developed by
@@ -155,12 +155,12 @@ Artemis and Image Safari collection.
 Cite the data descriptor:
 
 > Mutuvi S. et al. (2026). *Artemis and Image Safari - Crop Imagery Datasets
-> Spanning Globally Critical Food Species.*
+> Spanning Globally Critical Crop Species.*
 
 When accessing data through AWS, also cite the registry entry:
 
 > Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical
-> Food Species was accessed on [DATE] at
+> Crop Species was accessed on [DATE] at
 > [registry.opendata.aws/artemis-image-safari](https://registry.opendata.aws/artemis-image-safari).
 
 Identify the release version used, the S3 bucket prefix, and the date accessed.

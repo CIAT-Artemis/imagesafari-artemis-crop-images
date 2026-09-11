@@ -158,7 +158,7 @@ Released under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 ## Citation
 
 > Mutuvi S. et al. (2026). *Artemis and Image Safari - Crop Imagery Datasets
-> Spanning Globally Critical Food Species*. Registry of Open Data on AWS.
+> Spanning Globally Critical Crop Species*. Registry of Open Data on AWS.
 
 The full author list is in [`CITATION.cff`](../CITATION.cff).
 

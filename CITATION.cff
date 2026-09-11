@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: If you use this dataset, please cite it using the metadata below.
-title: "Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Food Species"
+title: "Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Crop Species"
 type: dataset
 authors:
   - family-names: Mutuvi
@@ -109,7 +109,7 @@ keywords:
   - phenotyping
 preferred-citation:
   type: article
-  title: "Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Food Species"
+  title: "Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Crop Species"
   authors:
     - family-names: Mutuvi
       given-names: Stephen

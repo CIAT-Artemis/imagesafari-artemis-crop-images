@@ -1,14 +1,14 @@
 # Changelog
 
 All notable changes to public releases of *Artemis and Image Safari - Crop
-Imagery Datasets Spanning Globally Critical Food Species* are documented in
+Imagery Datasets Spanning Globally Critical Crop Species* are documented in
 this file.
 
 ## [Unreleased]
 
 ### Documentation
 
-- Adopt dataset name *Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Food Species*.
+- Adopt dataset name *Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Crop Species*.
 - Remove FAIRGrounds references; AWS Open Data is the sole data hosting platform.
 - Treat Artemis and Image Safari as one unified dataset release.
 - Rename tutorial notebook to `get-to-know-a-dataset-imagesafari_artemis.ipynb`.
