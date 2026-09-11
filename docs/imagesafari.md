@@ -14,8 +14,11 @@ The corpus is maintained by the
 | Attribute | Value |
 |---|---:|
 | Published images | 6,081,555 |
-| Annotated images | 30,765 |
-| Crops | 18 |
+| Annotated images | 30,570 |
+| Annotation instances | 10,049,665 |
+| Crops in image corpus | 18 |
+| Crops with published annotations | 17 |
+| Annotation sets published | 68 |
 | Countries | 9 |
 | Contributing research centres | 15 |
 | Image format | JPEG |
@@ -152,11 +155,11 @@ ImageSafari/
     ├── images/
     ├── annotations/
     │   └── standard/
-    │       ├── point/
-    │       ├── semantic_segmentation/
-    │       ├── scribble/
-    │       ├── object_detection/
-    │       └── instance_segmentation/
+    │       ├── point/<set>/
+    │       ├── semantic_segmentation/<set>/
+    │       ├── scribble/<set>/
+    │       ├── object_detection/<set>/
+    │       └── instance_segmentation/<set>/
     └── metadata/
 ```
 
@@ -197,17 +200,45 @@ files associated with each image.
 ## Annotations
 
 Image Safari annotations are released under a **standard** track and organized
-by modality:
+by modality and named set. The current public inventory (2026-09-11) covers
+**17 of 18** crops (finger millet has imagery but no published annotation sets)
+and **68** annotation sets.
 
-| Modality | Directory |
-|---|---|
-| Point | `annotations/standard/point/` |
-| Semantic segmentation | `annotations/standard/semantic_segmentation/` |
-| Scribble | `annotations/standard/scribble/` |
-| Object detection | `annotations/standard/object_detection/` |
-| Instance segmentation | `annotations/standard/instance_segmentation/` |
+| Modality | Annotated images | Annotation instances | Crops with this type |
+|---|---:|---:|---:|
+| Point | 11,448 | 3,894,917 | 11 |
+| Scribble | 7,831 | 3,243,389 | 11 |
+| Semantic segmentation | 6,541 | 1,619,166 | 16 |
+| Instance segmentation | 2,331 | 1,246,563 | 8 |
+| Object detection | 2,419 | 45,630 | 1 (common bean) |
+| **Total (unique images)** | **30,570** | **10,049,665** | **17** |
 
-See [`annotation_guidelines.md`](annotation_guidelines.md).
+### Annotated images by crop
+
+| Crop | Annotated images | Dominant types |
+|---|---:|---|
+| Common bean | 4,170 | object detection, semantic segmentation |
+| Groundnut | 3,464 | scribble, point |
+| Sweet potato | 2,688 | scribble, point |
+| Sorghum | 2,455 | instance / semantic segmentation |
+| Cassava | 2,367 | point |
+| Cowpea | 2,202 | scribble |
+| Maize | 2,164 | semantic segmentation, point |
+| Potato | 1,396 | scribble |
+| Pigeon pea | 1,357 | semantic segmentation |
+| Rice | 1,216 | point |
+| Wheat | 1,193 | point, instance segmentation |
+| Banana | 1,190 | point |
+| Chickpea | 1,158 | point |
+| African yam | 1,094 | point |
+| Soybean | 1,063 | point |
+| Yam | 899 | point |
+| Pearl millet | 494 | scribble, semantic segmentation |
+| Finger millet | 0 | — |
+
+Named sets include labels such as `plant-part`, `plant-semantic`,
+`pseudo-instance`, `plant_points`, and crop-specific task sets (for example
+sorghum `panicle-grain`). See [`annotation_guidelines.md`](annotation_guidelines.md).
 
 ## Included data
 

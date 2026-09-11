@@ -12,7 +12,7 @@ The collection spans **18 crop species** and **11 countries** across sub-Saharan
 Africa, Latin America, and the United States, with emphasis on smallholder and
 structured phenotyping farming systems that remain underrepresented in public
 imaging corpora. Together, the datasets combine crop imagery, structured
-metadata, and benchmark annotations to support agricultural foundation models,
+metadata, and annotations to support agricultural foundation models,
 plant disease detection, growth stage recognition, crop identification,
 agricultural monitoring, and cross-environment generalisation research.
 
@@ -51,12 +51,13 @@ Multiple imaging devices and field conditions are represented, with particular
 emphasis on smallholder farming systems common in the Global South that remain
 substantially underrepresented in existing public datasets.
 
-A subset of **42,981 annotated images** (12,216 Artemis; 30,765 Image Safari)
+A subset of **46,952 annotated images** (16,382 Artemis; 30,570 Image Safari)
 includes organ-level labels organized by annotation task. Artemis provides
-**instance segmentation**, **object detection**, and **image classification**.
-Image Safari annotations are released under a **standard** track and include
-**point**, **semantic segmentation**, **scribble**, **object detection**, and
-**instance segmentation**.
+**instance segmentation** and **object detection** across three crops (common
+bean, cowpea, and sorghum). Image Safari annotations are released under a
+**standard** track for **17 of 18** crops and include **point**, **semantic
+segmentation**, **scribble**, **object detection**, and **instance
+segmentation** (object detection currently for common bean only).
 
 ## Public access
 
@@ -76,36 +77,41 @@ corrections are versioned and documented in [`CHANGELOG.md`](CHANGELOG.md).
 The collection is hosted in the `alliance-artemis-imagesafari` S3 bucket and is
 organized into the Artemis and Image Safari datasets, grouped by crop. Each crop
 directory contains an `images/` subtree, an `annotations/` subtree, and a
-`metadata/` subtree. Artemis annotations are organized by task type; Image Safari
-annotations are organized under a **standard** track by modality.
+`metadata/` subtree. Artemis annotations are nested by optional variety, task
+type, and named set. Image Safari annotations are organized under a **standard**
+track by modality and named set.
 
 ```text
 alliance-artemis-imagesafari/
 ├── Artemis/
-│   └── <crop>/                    # e.g. cowpea, common-bean, soybean, sorghum
+│   └── <crop>/                    # e.g. common-bean, cowpea, sorghum, soybean
 │       ├── images/
 │       ├── annotations/
-│       │   ├── instance_segmentation/
-│       │   ├── object_detection/
-│       │   └── image_classification/
+│       │   └── [<variety>/]       # e.g. bush-bean (when applicable)
+│       │       ├── instance_segmentation/<set>/
+│       │       └── object_detection/<set>/
 │       └── metadata/
 └── ImageSafari/
     └── <crop>/
         ├── images/
         ├── annotations/
         │   └── standard/
-        │       ├── point/
-        │       ├── semantic_segmentation/
-        │       ├── scribble/
-        │       ├── object_detection/
-        │       └── instance_segmentation/
+        │       ├── point/<set>/
+        │       ├── semantic_segmentation/<set>/
+        │       ├── scribble/<set>/
+        │       ├── object_detection/<set>/      # common-bean in current release
+        │       └── instance_segmentation/<set>/
         └── metadata/
 ```
 
-**Artemis** annotations support three tasks: instance segmentation, object
-detection, and image classification. **Image Safari** annotations are organized
-under a **standard** track by modality — point, semantic segmentation, scribble,
-object detection, and instance segmentation.
+**Artemis** annotations cover instance segmentation and object detection
+(16,382 annotated images; 289,405 annotation instances across eight published
+sets). Soybean imagery is included in the corpus but has no published
+annotation sets in the current inventory. **Image Safari** annotations cover
+point, semantic segmentation, scribble, object detection, and instance
+segmentation (30,570 annotated images; about 10.05 million annotation
+instances across 68 published sets). Finger millet is present in the image
+corpus but has no published annotation sets in the current inventory.
 
 Images are stored as JPEG files at original acquisition resolution. Segmentation
 outputs are provided as PNG masks with matching filenames. Object-level

@@ -1,61 +1,109 @@
 # Annotation guidelines
 
-Annotations follow a hierarchical plant-organ taxonomy with primary categories
-for whole plants, leaves, stems, flowers, fruits, and weeds, subdivided into
-crop-specific classes such as `plant_sorghum`, `flower_panicle`, `fruit_grain`,
-and `weed_broadleafed`.
+This document describes the annotation modalities and directory layout used in
+the Artemis and Image Safari public release. Counts reflect the S3 inventory of
+2026-09-11.
 
-## Annotation types
+## Overview
 
-Five representations are provided:
+| Collection | Annotated images | Annotation instances | Modality profile |
+|---|---:|---:|---|
+| Artemis | 16,382 | 289,405 | Instance segmentation, object detection |
+| Image Safari | 30,570 | 10,049,665 | Point, scribble, semantic / instance segmentation, object detection |
+| Combined | 46,952 | 10,339,070 | — |
 
-| Type | Format | Typical use |
-|---|---|---|
-| Bounding box | COCO JSON | Detection and localization |
-| Masks / polygon | PNG mask or COCO JSON | Semantic and instance segmentation |
-| Point | COCO JSON | Keypoint and weak supervision |
-| Scribble | COCO JSON | Scribble-supervised segmentation |
+## Artemis
 
-## Annotation tracks
-
-- **standard/** — higher-volume labels from the scaled annotation pipeline,
-  suitable for pre-training and representation learning.
-- **benchmark/** — expert-reviewed labels for method comparison and
-  reproducibility studies.
-
-### Benchmark crops
-
-The benchmark track is populated for four Image Safari crops selected to
-represent distinct agronomic groups:
-
-| Crop | Group |
-|---|---|
-| Banana | Perennial |
-| Common bean | Legume |
-| Potato | Tuber |
-| Sorghum | Grass |
-
-For Artemis, annotated subsets use polygon and bounding-box formats for common
-bean, cowpea, and sorghum under defined trial protocols.
-
-## Quality control
-
-Annotations were produced in Roboflow, CVAT, and Supervisely following a
-standardized protocol covering class definitions, boundary rules,
-ambiguity-resolution procedures, and return-for-correction workflows. Benchmark
-subsets were independently reviewed by three expert annotators using semantic
-segmentation; inter-annotator agreement is reported in the data descriptor.
-
-## File layout
+### Layout
 
 ```text
-<crop>/annotations/
-├── standard/
-│   ├── coco/
-│   └── masks/
-└── benchmark/
-    ├── coco/
-    └── masks/
+Artemis/<crop>/annotations/[<variety>/]<annotation_type>/<set>/
+├── <set>_all.json          # COCO annotations
+└── annotated_images/       # JPEG images linked to the set
 ```
 
-Mask filenames match the corresponding image filenames with a `.png` extension.
+- Optional `<variety>` path segment (for example `bush-bean`) appears when
+  variety-specific sets are published.
+- Published Artemis types are **`instance_segmentation`** and
+  **`object_detection`** only.
+- Soybean has imagery and metadata in the release but no published annotation
+  sets in this inventory.
+
+### Modality definitions
+
+| Type | Description | Typical labels |
+|---|---|---|
+| Instance segmentation | Per-instance polygon masks in COCO JSON | Flowers, pods, plant parts |
+| Object detection | Axis-aligned bounding boxes in COCO JSON | Plant stands, pods, weeds |
+
+### Published sets (summary)
+
+| Crop | Sets | Images | Annotations |
+|---|---:|---:|---:|
+| Common bean | 4 | 5,392 | 119,107 |
+| Cowpea | 2 | 4,264 | 66,192 |
+| Sorghum | 2 | 6,726 | 104,106 |
+| Soybean | 0 | 0 | 0 |
+
+Named sets include `bushbean_flower`, `bushbean_pod`, `bushbean_plant_stand`,
+`cowpea_plant_stand`, `plant_stand_object_detection`, and `sorghum_plant_stand`.
+
+**Inventory caveat:** one cowpea object-detection set reports missing linked
+image objects; validate image availability before training.
+
+## Image Safari
+
+### Layout
+
+```text
+ImageSafari/<crop>/annotations/standard/<annotation_type>/<set>/
+```
+
+- All published Image Safari annotations sit under the **`standard/`** track.
+- Sets are named directories (for example `plant-part`, `plant-semantic`,
+  `pseudo-instance`, `plant_points`).
+- Finger millet has imagery but no published annotation sets in this inventory.
+- Object detection is currently concentrated on **common bean**.
+
+### Modality definitions
+
+| Type | Description |
+|---|---|
+| Point | Sparse point clicks on plant parts or organs |
+| Scribble | Freehand stroke annotations |
+| Semantic segmentation | Pixel-wise class maps without instance IDs |
+| Instance segmentation | Per-instance masks |
+| Object detection | Bounding boxes (primarily common bean) |
+
+### Coverage by modality
+
+| Modality | Annotated images | Annotation instances | Crops |
+|---|---:|---:|---:|
+| Point | 11,448 | 3,894,917 | 11 |
+| Scribble | 7,831 | 3,243,389 | 11 |
+| Semantic segmentation | 6,541 | 1,619,166 | 16 |
+| Instance segmentation | 2,331 | 1,246,563 | 8 |
+| Object detection | 2,419 | 45,630 | 1 |
+
+Unique annotated images across modalities: **30,570** (images may appear in more
+than one modality row above; the unique total is the inventory headline).
+
+## Formats
+
+| Format | Used for |
+|---|---|
+| COCO JSON | Artemis object detection and instance segmentation; Image Safari object / instance sets where applicable |
+| Raster masks / label maps | Semantic and instance segmentation outputs |
+| Point / scribble sidecars | Sparse supervision modalities under Image Safari `standard/` |
+
+Exact file naming can vary by set. Prefer loading via the published set
+directory rather than assuming a single global filename pattern.
+
+## Quality notes
+
+- Treat annotation inventory counts as the current public snapshot; re-inventory
+  after future uploads.
+- Prefer set-level manifests and COCO `images` / `file_name` fields to resolve
+  image paths.
+- Missing or unmatched image keys should be excluded from training splits and
+  reported when citing subset sizes.

@@ -14,8 +14,10 @@ The dataset is maintained by the
 | Attribute | Value |
 |---|---:|
 | Images | 1,387,663 |
-| Annotated images | 12,216 |
-| Crops | 4 |
+| Annotated images | 16,382 |
+| Annotation instances | 289,405 |
+| Crops in image corpus | 4 |
+| Crops with published annotations | 3 |
 | Countries | 4 |
 | Image format | JPEG |
 | License | CC BY-SA 4.0 |
@@ -71,9 +73,13 @@ Artemis/
 └── <crop>/
     ├── images/
     ├── annotations/
-    │   ├── instance_segmentation/
-    │   ├── object_detection/
-    │   └── image_classification/
+    │   └── [<variety>/]                 # e.g. bush-bean when applicable
+    │       ├── instance_segmentation/<set>/
+    │       │   ├── <set>_all.json       # COCO
+    │       │   └── annotated_images/
+    │       └── object_detection/<set>/
+    │           ├── <set>_all.json
+    │           └── annotated_images/
     └── metadata/
 ```
 
@@ -90,22 +96,45 @@ Open Data Kit.
 
 ## Annotations
 
-Artemis annotations are organized by task under each crop's `annotations/`
-directory:
+Artemis annotations are organized by task (and optional variety) under each
+crop's `annotations/` directory. The current public inventory (2026-09-11)
+covers **instance segmentation** and **object detection** only.
 
-| Task | Directory | Typical formats |
-|---|---|---|
-| Instance segmentation | `instance_segmentation/` | Polygon masks / COCO |
-| Object detection | `object_detection/` | Bounding boxes / COCO |
-| Image classification | `image_classification/` | Class labels |
+| Task | Annotated images | Annotation instances | Crops |
+|---|---:|---:|---|
+| Object detection | 14,693 | 258,323 | common bean, cowpea, sorghum |
+| Instance segmentation | 1,689 | 31,082 | common bean |
+| **Total** | **16,382** | **289,405** | **3** |
 
-Annotated Artemis subsets:
+### Annotated images by crop and type
 
-| Crop | Countries | Annotated images | Types |
-|---|---|---:|---|
-| Common bean | TZ, UG, CO | 4,292 | Polygon, bounding boxes |
-| Cowpea | TZ, US | 4,642 | Polygon, bounding boxes |
-| Sorghum | TZ, US | 3,282 | Polygon, bounding boxes |
+| Crop | Instance segmentation | Object detection | Total |
+|---|---:|---:|---:|
+| Common bean | 1,689 | 3,703 | 5,392 |
+| Cowpea | 0 | 4,264 | 4,264 |
+| Sorghum | 0 | 6,726 | 6,726 |
+| Soybean | 0 | 0 | 0 |
+
+### Published annotation sets
+
+| Crop | Variety | Type | Set | Images | Annotations |
+|---|---|---|---|---:|---:|
+| Common bean | bush-bean | instance_segmentation | bushbean_flower | 854 | 14,434 |
+| Common bean | bush-bean | instance_segmentation | bushbean_pod | 835 | 16,648 |
+| Common bean | bush-bean | object_detection | bushbean_plant_stand | 1,686 | 40,212 |
+| Common bean | bush-bean | object_detection | bushbean_pod | 2,017 | 47,813 |
+| Cowpea | — | object_detection | cowpea_plant_stand | 2,132 | 33,096 |
+| Cowpea | — | object_detection | plant_stand_object_detection | 2,132 | 33,096 |
+| Sorghum | — | object_detection | plant_stand_object_detection | 3,363 | 55,020 |
+| Sorghum | — | object_detection | sorghum_plant_stand | 3,363 | 49,086 |
+
+Example classes include `plant_bean`, `flower_open`, `flower_closed`, `pod`,
+`fruit_pod`, `cowpea_plant`, weed classes, and `sorghum`. See
+[`annotation_guidelines.md`](annotation_guidelines.md).
+
+**Known inventory note:** one cowpea object-detection set reports missing linked
+image objects in the 2026-09-11 bucket inventory; users should validate image
+availability for that set before training.
 
 ## Public access
 
