@@ -14,11 +14,11 @@ The corpus is maintained by the
 | Attribute | Value |
 |---|---:|
 | Published images | 6,081,555 |
-| Annotated images | 30,570 |
-| Annotation instances | 10,049,665 |
+| Annotated images | 29,671 |
+| Annotation instances | 9,753,271 |
 | Crops in image corpus | 18 |
 | Crops with published annotations | 16 |
-| Annotation sets published | 68 |
+| Annotation sets published | 67 |
 | Countries | 9 |
 | Contributing research centres | 15 |
 | Image format | JPEG |
@@ -177,7 +177,10 @@ read metadata defensively and treat unavailable values as `unknown`.
 ## Metadata
 
 Metadata are derived from the object key, source inventory, and JSON sidecar
-files associated with each image.
+files associated with each image. About **663,000** Image Safari images
+(**~11%**) have no sidecar JSON. Those images remain valid; when joining images
+to metadata, treat sidecars as optional and do not drop images that lack a
+sidecar.
 
 | Field | Description |
 |---|---|
@@ -206,12 +209,12 @@ annotations.
 
 | Modality | Annotated images | Annotation instances | Crops with this type |
 |---|---:|---:|---:|
-| Point | 11,448 | 3,894,917 | 11 |
+| Point | 10,549 | 3,598,523 | 10 |
 | Scribble | 7,831 | 3,243,389 | 11 |
 | Semantic segmentation | 6,541 | 1,619,166 | 16 |
 | Instance segmentation | 2,331 | 1,246,563 | 8 |
 | Object detection | 2,419 | 45,630 | 1 (common bean) |
-| **Total** | **30,570** | **10,049,665** | **16** |
+| **Total** | **29,671** | **9,753,271** | **16** |
 
 ### Annotated images by crop
 
@@ -244,7 +247,8 @@ sorghum `panicle-grain`). See [`annotation_guidelines.md`](annotation_guidelines
 
 The release contains cleaned still images in JPEG format at original
 acquisition resolution. Segmentation outputs are PNG masks. Object-level
-annotations are COCO JSON. Per-image metadata is provided as JSON sidecar files.
+annotations are COCO JSON. Per-image metadata is provided as JSON sidecar files
+where available (see Metadata above for images without sidecars).
 
 The following materials are not included:
 
