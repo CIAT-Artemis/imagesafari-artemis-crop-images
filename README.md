@@ -51,7 +51,7 @@ Multiple imaging devices and field conditions are represented, with particular
 emphasis on smallholder farming systems common in the Global South that remain
 substantially underrepresented in existing public datasets.
 
-A subset of **44,820 annotated images** (14,250 Artemis; 30,570 Image Safari)
+A subset of **40,558 annotated images** (10,887 Artemis; 29,671 Image Safari)
 includes organ-level labels organized by annotation task. Artemis provides
 **instance segmentation** and **object detection** across three crops (common
 bean, cowpea, and sorghum). Image Safari annotations are released under a
@@ -78,9 +78,8 @@ corrections are versioned and documented in [`CHANGELOG.md`](CHANGELOG.md).
 The collection is hosted in the `alliance-artemis-imagesafari` S3 bucket and is
 organized into the Artemis and Image Safari datasets, grouped by crop. Each crop
 directory contains an `images/` subtree, an `annotations/` subtree, and a
-`metadata/` subtree. Artemis annotations are nested by optional variety, task
-type, and named set. Image Safari annotations are organized under a **standard**
-track by modality and named set.
+`metadata/` subtree. Artemis and Image Safari annotations are organized under a
+**standard** track by modality (or task) and named set.
 
 ```text
 alliance-artemis-imagesafari/
@@ -88,7 +87,7 @@ alliance-artemis-imagesafari/
 │   └── <crop>/                    # e.g. common-bean, cowpea, sorghum, soybean
 │       ├── images/
 │       ├── annotations/
-│       │   └── [<variety>/]       # e.g. bush-bean (when applicable)
+│       │   └── standard/
 │       │       ├── instance_segmentation/<set>/
 │       │       └── object_detection/<set>/
 │       └── metadata/
@@ -106,12 +105,12 @@ alliance-artemis-imagesafari/
 ```
 
 **Artemis** annotations cover instance segmentation and object detection
-(14,250 annotated images; 256,309 annotation instances across seven published
+(10,887 annotated images; 201,289 annotation instances across six published
 sets). Soybean imagery is included in the corpus but has no published
 annotation sets in the current inventory. **Image Safari** annotations cover
 point, semantic segmentation, scribble, object detection, and instance
-segmentation (30,570 annotated images; about 10.05 million annotation
-instances across 68 published sets). Finger millet and lentil are present in
+segmentation (29,671 annotated images; about 9.75 million annotation
+instances across 67 published sets). Finger millet and lentil are present in
 the image corpus but have no annotations in the current inventory.
 
 Images are stored as JPEG files at original acquisition resolution. Segmentation
@@ -120,8 +119,8 @@ annotations are stored in COCO JSON format. **Artemis** metadata is provided as
 Parquet and CSV files under each crop's `metadata/` subtree. **Image Safari**
 metadata is provided as JSON sidecar files. Sidecars include model-generated fields
 and these fields are identified by `provenance = model` in the variable dictionary.
-Approximately 11% of Image Safari images do not have an accompanying metadata sidecar
-but are valid images. 
+Approximately 11% of Image Safari images (662,724) do not have an accompanying metadata sidecar
+but are valid images. Do not drop those images when joining images to sidecars. 
 
 ## Repository contents
 
