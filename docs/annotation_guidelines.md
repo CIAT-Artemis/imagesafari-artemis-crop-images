@@ -8,22 +8,21 @@ the Artemis and Image Safari public release. Counts reflect the S3 inventory of
 
 | Collection | Annotated images | Annotation instances | Modality profile |
 |---|---:|---:|---|
-| Artemis | 14,250 | 256,309 | Instance segmentation, object detection |
-| Image Safari | 30,570 | 10,049,665 | Point, scribble, semantic / instance segmentation, object detection |
-| Combined | 44,820 | 10,305,974 | — |
+| Artemis | 10,887 | 201,289 | Instance segmentation, object detection |
+| Image Safari | 29,671 | 9,753,271 | Point, scribble, semantic / instance segmentation, object detection |
+| Combined | 40,558 | 9,954,560 | — |
 
 ## Artemis
 
 ### Layout
 
 ```text
-Artemis/<crop>/annotations/[<variety>/]<annotation_type>/<set>/
+Artemis/<crop>/annotations/standard/<annotation_type>/<set>/
 ├── <set>_all.json          # COCO annotations
 └── annotated_images/       # JPEG images linked to the set
 ```
 
-- Optional `<variety>` path segment (for example `bush-bean`) appears when
-  variety-specific sets are published.
+- All published Artemis annotations sit under the **`standard/`** track.
 - Published Artemis types are **`instance_segmentation`** and
   **`object_detection`** only.
 - Soybean has imagery and metadata in the release but no published annotation
@@ -42,14 +41,14 @@ Artemis/<crop>/annotations/[<variety>/]<annotation_type>/<set>/
 |---|---:|---:|---:|
 | Common bean | 4 | 5,392 | 119,107 |
 | Cowpea | 1 | 2,132 | 33,096 |
-| Sorghum | 2 | 6,726 | 104,106 |
+| Sorghum | 1 | 3,363 | 49,086 |
 
 Soybean has imagery but no annotations in this inventory.
 
-Named sets include `bushbean_flower`, `bushbean_pod`, `bushbean_plant_stand`,
-`cowpea_plant_stand`, `plant_stand_object_detection` (sorghum), and
+Named sets include `flower`, `pod`, `plant_stand`, `cowpea_plant_stand`, and
 `sorghum_plant_stand`. The incomplete cowpea `plant_stand_object_detection`
-set is retired from the published inventory.
+set and the duplicate sorghum `plant_stand_object_detection` set are retired
+from the published inventory.
 
 ## Image Safari
 
@@ -79,13 +78,13 @@ ImageSafari/<crop>/annotations/standard/<annotation_type>/<set>/
 
 | Modality | Annotated images | Annotation instances | Crops |
 |---|---:|---:|---:|
-| Point | 11,448 | 3,894,917 | 11 |
+| Point | 10,549 | 3,598,523 | 10 |
 | Scribble | 7,831 | 3,243,389 | 11 |
 | Semantic segmentation | 6,541 | 1,619,166 | 16 |
 | Instance segmentation | 2,331 | 1,246,563 | 8 |
 | Object detection | 2,419 | 45,630 | 1 |
 
-Unique annotated images across modalities: **30,570** (images may appear in more
+Unique annotated images across modalities: **29,671** (images may appear in more
 than one modality row above; the unique total is the inventory headline).
 
 ## Formats

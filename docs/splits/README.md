@@ -19,5 +19,5 @@ Each manifest lists `object_key`, `crop`, `site`, `country`, `date_captured`,
 ## Usage
 
 When reporting results, specify the dataset (Artemis or Image Safari), crop
-subset, and split files used. For Image Safari annotations, cite the
-`standard/<modality>/<set>/` paths used.
+subset, and split files used. For annotations, cite the
+`standard/<modality_or_task>/<set>/` paths used.
