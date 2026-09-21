@@ -352,7 +352,8 @@ The dataset is released under the
 ## Citation
 
 > Mutuvi S. et al. (2026). *Artemis and Image Safari - Crop Imagery Datasets
-> Spanning Globally Critical Crop Species*. Registry of Open Data on AWS.
+> Spanning Globally Critical Crop Species*.
+> https://doi.org/10.31220/agriRxiv.2026.00491
 
 Also include the date on which the data were accessed and identify the release
 or S3 prefix used in the analysis. The full author list is in

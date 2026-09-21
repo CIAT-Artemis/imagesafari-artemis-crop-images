@@ -154,10 +154,11 @@ Artemis and Image Safari collection.
 
 ## Citation
 
-Cite the data descriptor:
+Cite the data descriptor (agriRxiv preprint):
 
 > Mutuvi S. et al. (2026). *Artemis and Image Safari - Crop Imagery Datasets
 > Spanning Globally Critical Crop Species.*
+> https://doi.org/10.31220/agriRxiv.2026.00491
 
 When accessing data through AWS, also cite the registry entry:
 
